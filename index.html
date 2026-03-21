@@ -1,0 +1,1876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allen Lu Zhao Quan | Aspiring Quant & Data Scientist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0b;
+            --bg-secondary: #111113;
+            --bg-tertiary: #18181b;
+            --text-primary: #fafafa;
+            --text-secondary: #a1a1aa;
+            --text-tertiary: #71717a;
+            --accent: #22d3ee;
+            --accent-dim: #0891b2;
+            --accent-glow: rgba(34, 211, 238, 0.15);
+            --border: #27272a;
+            --border-light: #3f3f46;
+            --gradient-1: linear-gradient(135deg, #22d3ee 0%, #06b6d4 50%, #0891b2 100%);
+            --gradient-2: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+            --font-mono: 'JetBrains Mono', monospace;
+            --font-serif: 'Instrument Serif', serif;
+            --font-sans: 'DM Sans', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-primary);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--border-light);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--text-tertiary);
+        }
+
+
+        /* ── Language Switcher ─────────────────────────────────── */
+        .lang-switcher {
+            position: relative;
+            margin-left: 1.5rem;
+        }
+
+        .lang-btn {
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            color: var(--text-secondary);
+            background: transparent;
+            border: 1px solid var(--border-light);
+            padding: 0.4rem 0.7rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .lang-btn:hover,
+        .lang-btn[aria-expanded="true"] {
+            border-color: var(--accent);
+            color: var(--accent);
+            box-shadow: 0 0 14px var(--accent-glow);
+        }
+
+        .lang-globe {
+            font-size: 0.9rem;
+            line-height: 1;
+        }
+
+        .lang-arrow {
+            font-size: 0.6rem;
+            transition: transform 0.2s ease;
+        }
+
+        .lang-btn[aria-expanded="true"] .lang-arrow {
+            transform: rotate(180deg);
+        }
+
+        .lang-dropdown {
+            position: absolute;
+            top: calc(100% + 0.5rem);
+            right: 0;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            list-style: none;
+            min-width: 148px;
+            display: none;
+            z-index: 1100;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+        }
+
+        .lang-dropdown.open {
+            display: block;
+        }
+
+        .lang-dropdown li {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            padding: 0.55rem 1rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.15s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            border-left: 2px solid transparent;
+        }
+
+        .lang-dropdown li:hover {
+            background: var(--accent-glow);
+            color: var(--text-primary);
+            border-left-color: var(--accent);
+        }
+
+        .lang-dropdown li.active {
+            color: var(--accent);
+            border-left-color: var(--accent);
+        }
+
+        /* ── RTL overrides ─────────────────────────────────────── */
+        [dir="rtl"] body {
+            font-family: 'Noto Kufi Arabic', var(--font-sans);
+        }
+
+        [dir="rtl"] .section-tag::before,
+        [dir="rtl"] .hero-tag::before {
+            display: none;
+        }
+
+        [dir="rtl"] .section-tag::after,
+        [dir="rtl"] .hero-tag::after {
+            content: '';
+            width: 30px;
+            height: 1px;
+            background: var(--accent);
+        }
+
+        [dir="rtl"] .hero-tag {
+            flex-direction: row-reverse;
+        }
+
+        [dir="rtl"] .section-tag {
+            flex-direction: row-reverse;
+        }
+
+        [dir="rtl"] .nav-links {
+            direction: rtl;
+        }
+
+        [dir="rtl"] .lang-dropdown {
+            right: auto;
+            left: 0;
+        }
+
+        [dir="rtl"] .lang-dropdown li {
+            border-left: none;
+            border-right: 2px solid transparent;
+        }
+
+        [dir="rtl"] .lang-dropdown li:hover,
+        [dir="rtl"] .lang-dropdown li.active {
+            border-right-color: var(--accent);
+        }
+
+        [dir="rtl"] .about-grid {
+            direction: rtl;
+        }
+
+        [dir="rtl"] .about-image-frame {
+            left: -20px;
+            right: 20px;
+        }
+
+        [dir="rtl"] .portfolio-item--hero {
+            direction: rtl;
+        }
+
+        [dir="rtl"] .competition-item {
+            direction: rtl;
+        }
+
+        [dir="rtl"] .hero-cta {
+            direction: rtl;
+        }
+
+        [dir="rtl"] .hero-metrics {
+            direction: rtl;
+        }
+
+        [dir="rtl"] .metric {
+            text-align: right;
+        }
+
+        [dir="rtl"] .portfolio-tech {
+            direction: rtl;
+        }
+
+        [dir="rtl"] .footer-content {
+            direction: rtl;
+        }
+
+        [dir="rtl"] .contact-links {
+            direction: rtl;
+        }
+
+        /* Grid Background */
+        .grid-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(34, 211, 238, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(34, 211, 238, 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .noise-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.03;
+            pointer-events: none;
+            z-index: 1;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1.5rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(10, 10, 11, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        nav.scrolled {
+            border-bottom-color: var(--border);
+        }
+
+        .logo {
+            font-family: var(--font-mono);
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--accent);
+            letter-spacing: -0.02em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            transition: color 0.2s ease;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--text-primary);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Main Content */
+        main {
+            position: relative;
+            z-index: 2;
+        }
+
+        section {
+            padding: 8rem 3rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 6rem;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 900px;
+        }
+
+        .hero-tag {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--accent);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+            animation-delay: 0.2s;
+        }
+
+        .hero-tag::before {
+            content: '';
+            width: 40px;
+            height: 1px;
+            background: var(--accent);
+        }
+
+        .hero h1 {
+            font-family: var(--font-serif);
+            font-size: clamp(3.5rem, 8vw, 7rem);
+            font-weight: 400;
+            line-height: 1.05;
+            letter-spacing: -0.03em;
+            margin-bottom: 2rem;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+            animation-delay: 0.4s;
+        }
+
+        .hero h1 em {
+            font-style: italic;
+            color: var(--accent);
+        }
+
+        .hero-description {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin-bottom: 3rem;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+            animation-delay: 0.6s;
+            text-align: justify;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1.5rem;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+            animation-delay: 0.8s;
+        }
+
+        .btn {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            padding: 1rem 2rem;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: var(--gradient-1);
+            color: var(--bg-primary);
+            font-weight: 600;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 40px var(--accent-glow);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-primary);
+            border: 1px solid var(--border-light);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .hero-metrics {
+            display: flex;
+            gap: 4rem;
+            margin-top: 5rem;
+            padding-top: 3rem;
+            border-top: 1px solid var(--border);
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+            animation-delay: 1s;
+        }
+
+        .metric {
+            text-align: left;
+        }
+
+        .metric-value {
+            font-family: var(--font-mono);
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 1;
+        }
+
+        .metric-label {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--text-tertiary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-top: 0.5rem;
+        }
+
+        /* Floating Geometric Elements */
+        .geo-element {
+            position: absolute;
+            pointer-events: none;
+            opacity: 0.5;
+        }
+
+        .geo-1 {
+            top: 15%;
+            right: 10%;
+            width: 300px;
+            height: 300px;
+            border: 1px solid var(--border);
+            transform: rotate(45deg);
+            animation: float 20s ease-in-out infinite;
+        }
+
+        .geo-2 {
+            top: 60%;
+            right: 20%;
+            width: 150px;
+            height: 150px;
+            border: 1px solid var(--accent-dim);
+            border-radius: 50%;
+            animation: float 15s ease-in-out infinite reverse;
+        }
+
+        .geo-3 {
+            top: 30%;
+            right: 5%;
+            width: 80px;
+            height: 80px;
+            background: var(--accent-glow);
+            border-radius: 50%;
+            filter: blur(40px);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(45deg); }
+            50% { transform: translateY(-30px) rotate(45deg); }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Section Headers */
+        .section-header {
+            margin-bottom: 4rem;
+        }
+
+        .section-tag {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--accent);
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .section-tag::before {
+            content: '';
+            width: 30px;
+            height: 1px;
+            background: var(--accent);
+        }
+
+        .section-title {
+            font-family: var(--font-serif);
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 400;
+            letter-spacing: -0.02em;
+        }
+
+        /* About Section */
+        .about {
+            background: var(--bg-secondary);
+            margin: 0;
+            max-width: 100%;
+            padding: 8rem 3rem;
+        }
+
+        .about-inner {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 6rem;
+            align-items: start;
+        }
+
+        .about-image-container {
+            position: relative;
+        }
+
+        .about-image {
+            width: 100%;
+            aspect-ratio: 4/5;
+            border: 1px solid var(--border);
+            position: relative;
+            overflow: hidden;
+            object-fit: cover;
+            display: block;
+        }
+
+        .about-image-frame {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: -20px;
+            bottom: -20px;
+            border: 1px solid var(--accent-dim);
+            z-index: -1;
+        }
+
+        .about-content h3 {
+            font-family: var(--font-serif);
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-content p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        .about-details {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+            padding-top: 3rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .detail-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .detail-label {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            color: var(--text-tertiary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .detail-value {
+            font-size: 1rem;
+            color: var(--text-primary);
+        }
+
+        /* Skills Section */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .skill-list li span[data-i18n] {
+            margin: 0 -0.7em;
+            
+        }
+
+        .skill-category {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            padding: 2.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .skill-category:hover {
+            border-color: var(--accent-dim);
+            transform: translateY(-5px);
+        }
+
+        .skill-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--accent-glow);
+            border: 1px solid var(--accent-dim);
+            margin-bottom: 1.5rem;
+            font-family: var(--font-mono);
+            font-size: 1.25rem;
+            color: var(--accent);
+        }
+
+        .skill-category h3 {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .skill-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .skill-list li {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .skill-list li::before {
+            content: '▹';
+            color: var(--accent);
+            font-size: 0.75rem;
+        }
+
+        /* Experience/Portfolio Section */
+        .portfolio {
+            background: var(--bg-secondary);
+            margin: 0;
+            max-width: 100%;
+            padding: 8rem 3rem;
+        }
+
+        .portfolio-inner {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .portfolio-item--hero {
+            grid-column: 1 / -1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .portfolio-item--hero .portfolio-hero-left {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .portfolio-item--hero h3 {
+            font-size: 2.25rem;
+        }
+
+        .portfolio-item--hero p {
+            font-size: 1rem;
+            text-align: justify;
+        }
+
+        .portfolio-item {
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            padding: 2.5rem;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .portfolio-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--gradient-1);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+
+        .portfolio-item:hover {
+            border-color: var(--accent-dim);
+            transform: translateY(-5px);
+        }
+
+        .portfolio-item:hover::before {
+            transform: scaleX(1);
+        }
+
+        .portfolio-tag {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+
+        .portfolio-item h3 {
+            font-family: var(--font-serif);
+            font-size: 1.75rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+
+        .portfolio-item p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+            text-align: justify;
+        }
+
+        .portfolio-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .portfolio-tech span {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            padding: 0.35rem 0.75rem;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+
+        .portfolio-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            margin-top: 1.5rem;
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--text-tertiary);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            transition: color 0.2s ease, gap 0.2s ease;
+        }
+
+        .portfolio-link:hover {
+            color: var(--accent);
+            gap: 0.65rem;
+        }
+
+        .portfolio-subsection-title {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            margin-top: 3rem;
+        }
+
+        .portfolio-subsection-title:first-of-type {
+            margin-top: 0;
+        }
+
+        /* Competitions Section */
+        .competitions-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .competition-item {
+            display: grid;
+            grid-template-columns: 120px 1fr auto;
+            gap: 3rem;
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--border);
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .competition-item:hover {
+            padding-left: 1rem;
+            border-bottom-color: var(--accent-dim);
+        }
+
+        .competition-year {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--text-tertiary);
+        }
+
+        .competition-info h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .competition-info p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            text-align: justify;
+        }
+
+        .competition-result {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            padding: 0.5rem 1rem;
+            background: var(--accent-glow);
+            border: 1px solid var(--accent-dim);
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Tutoring Section */
+        .tutoring {
+            background: var(--bg-secondary);
+            margin: 0;
+            max-width: 100%;
+            padding: 8rem 3rem;
+        }
+
+        .tutoring-inner {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .tutoring-content {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 6rem;
+            align-items: center;
+        }
+
+        .tutoring-text h3 {
+            font-family: var(--font-serif);
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+        }
+
+        .tutoring-text p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        .tutoring-highlights {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .highlight-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .highlight-icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            color: var(--accent);
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+
+        .highlight-text {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        .tutoring-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .stat-card {
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-family: var(--font-mono);
+            font-size: 3rem;
+            font-weight: 600;
+            color: var(--accent);
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-top: 0.5rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            text-align: center;
+            padding: 10rem 3rem;
+        }
+
+        .contact .section-header {
+            margin-bottom: 3rem;
+        }
+
+        .contact-description {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto 3rem;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .contact-link {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 1rem 1.5rem;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-link:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            transform: translateY(-3px);
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-text {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--text-tertiary);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-links a {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--text-tertiary);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .mobile-menu-btn span {
+            width: 25px;
+            height: 2px;
+            background: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            section {
+                padding: 6rem 2rem;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 4rem;
+            }
+
+            .about-image-container {
+                max-width: 400px;
+            }
+
+            .skills-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .portfolio-item--hero {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+
+            .tutoring-content {
+                grid-template-columns: 1fr;
+                gap: 4rem;
+            }
+
+            .tutoring-stats {
+                max-width: 400px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 1rem 1.5rem;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--bg-primary);
+                border-bottom: 1px solid var(--border);
+                flex-direction: column;
+                padding: 2rem;
+                gap: 1.5rem;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            section {
+                padding: 4rem 1.5rem;
+            }
+
+            .hero-metrics {
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .skills-container {
+                grid-template-columns: 1fr;
+            }
+
+            .about-details {
+                grid-template-columns: 1fr;
+            }
+
+            .competition-item {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .competition-result {
+                justify-self: start;
+            }
+
+            .tutoring-highlights {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .geo-element {
+                display: none;
+            }
+        }
+
+        /* Scroll Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-bg"></div>
+    <div class="noise-overlay"></div>
+
+    <nav id="navbar">
+        <a href="#" class="logo">&lt;Allen.L /&gt;</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about" data-i18n="nav.about">About</a></li>
+            <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+            <li><a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+            <li><a href="#competitions" data-i18n="nav.achievements">Achievements</a></li>
+            <li><a href="#tutoring" data-i18n="nav.tutoring">Tutoring</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="lang-switcher" id="langSwitcher">
+            <button class="lang-btn" id="langBtn" aria-expanded="false" aria-label="Switch language">
+                <span class="lang-globe">🌐</span>
+                <span class="lang-current" id="langCurrent">EN</span>
+                <span class="lang-arrow">▾</span>
+            </button>
+            <ul class="lang-dropdown" id="langDropdown" role="listbox">
+                <li data-lang="en" role="option">🇬🇧 English</li>
+                <li data-lang="zh" role="option">🇨🇳 中文</li>
+                <li data-lang="hi" role="option">🇮🇳 हिन्दी</li>
+                <li data-lang="es" role="option">🇪🇸 Español</li>
+                <li data-lang="fr" role="option">🇫🇷 Français</li>
+                <li data-lang="ar" role="option">🇸🇦 العربية</li>
+            </ul>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="hero-tag" data-i18n="hero.tag">Aspiring Quant &amp; Data Scientist</span>
+                <h1 data-i18n-html="hero.h1">Building the future through <em>Data</em> and <em>Mathematics</em></h1>
+                <p class="hero-description" data-i18n="hero.description">
+                    A penultimate-year student passionate about quantitative finance, 
+                    data, and machine learning through building scalable technology solutions that 
+                    make a real impact.
+                </p>
+                <div class="hero-cta">
+                    <a href="https://www.linkedin.com/in/allen-lu-5964481b6" class="btn btn-primary" target="_blank" data-i18n="hero.cta_primary">Let's Connect →</a>
+                    <a href="https://github.com/Darkmatter126ms?tab=repositories" class="btn btn-secondary" target="_blank" data-i18n="hero.cta_secondary">View My Work</a>
+                </div>
+                <div class="hero-metrics">
+                    <div class="metric">
+                        <div class="metric-value">4.20</div>
+                        <div class="metric-label" data-i18n="hero.gpa_label">GPA</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value">7+</div>
+                        <div class="metric-label" data-i18n="hero.projects_label">Projects</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value">3+</div>
+                        <div class="metric-label" data-i18n="hero.competitions_label">Competitions</div>
+                    </div>
+                </div>
+            </div>
+            <div class="geo-element geo-1"></div>
+            <div class="geo-element geo-2"></div>
+            <div class="geo-element geo-3"></div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="about-inner">
+                <div class="section-header reveal">
+                    <span class="section-tag" data-i18n="about.section_tag">01 — About</span>
+                    <h2 class="section-title" data-i18n="about.section_title">A bit about myself</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-image-container reveal">
+                        <img src="profile.jpeg" alt="Profile photo" class="about-image">
+                        <div class="about-image-frame"></div>
+                    </div>
+                    <div class="about-content reveal">
+                        <h3 data-i18n="about.heading">Driven by curiosity, powered by data</h3>
+                        <p data-i18n="about.p1">
+                            I am Allen Lu Zhao Quan, a penultimate-year student at Nanyang Technological University 
+                            majoring in Data Science and Artificial Intelligence. My journey 
+                            into technology and quantitative analysis began from a conversation with my senior
+                            about the field, who helped me realised my math background was not
+                            separated from finance and consequently, this reframed everything, helping me to
+                            discovered the elegance of mathematical models in predicting 
+                            real-world phenomena.
+                        </p>
+                        <p data-i18n="about.p2">
+                            My aspiration is to work at the intersection of data and finance, 
+                            whether that's researching trading algorithms at a quantitative hedge fund, 
+                            building scalable systems at a leading tech company, or creating innovative 
+                            solutions that bridge both worlds.
+                        </p>
+                        <p data-i18n="about.p3">
+                            When I am not coding or crunching numbers, I love to read, play poker,
+                            gym, and make money.
+                        </p>
+                        <div class="about-details">
+                            <div class="detail-item">
+                                <span class="detail-label" data-i18n="about.label_university">University</span>
+                                <span class="detail-value" data-i18n="about.val_university">Nanyang Technological University</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label" data-i18n="about.label_major">Major</span>
+                                <span class="detail-value" data-i18n="about.val_major">Data Science and Artificial Intelligence</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label" data-i18n="about.label_graduation">Expected Graduation</span>
+                                <span class="detail-value" data-i18n="about.val_graduation">Dec 2027</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label" data-i18n="about.label_focus">Focus Areas</span>
+                                <span class="detail-value" data-i18n="about.val_focus">Quantitative Finance, ML/AI, Data Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <div class="section-header reveal">
+                <span class="section-tag" data-i18n="skills.section_tag">02 — Skills</span>
+                <h2 class="section-title" data-i18n="skills.section_title">Technical Arsenal</h2>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category reveal">
+                    <div class="skill-icon">λ</div>
+                    <h3 data-i18n="skills.cat_languages">Languages</h3>
+                    <ul class="skill-list">
+                        <li>Python (<span data-i18n="skills.proficient">Proficient</span>)</li>
+                        <li>SQL (<span data-i18n="skills.proficient">Proficient</span>)</li>
+                        <li>R (<span data-i18n="skills.proficient">Proficient</span>)</li>
+                        <li>C (<span data-i18n="skills.intermediate">Intermediate</span>)</li>
+                        <li>C++ (<span data-i18n="skills.developing">Developing</span>)</li>
+                        <li>Java (<span data-i18n="skills.developing">Developing</span>)</li>
+                        <li>JavaScript (<span data-i18n="skills.developing">Developing</span>)</li>
+                    </ul>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-icon">∑</div>
+                    <h3 data-i18n="skills.cat_quant">Quant &amp; Data</h3>
+                    <ul class="skill-list">
+                        <li>NumPy / Pandas</li>
+                        <li>Statistical Modeling</li>
+                        <li>Machine Learning</li>
+                        <li>Time Series Analysis</li>
+                        <li>Risk Management</li>
+                        <li>Backtesting</li>
+                    </ul>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-icon">⚙</div>
+                    <h3 data-i18n="skills.cat_tools">Tools &amp; Frameworks</h3>
+                    <ul class="skill-list">
+                        <li>Tableau</li>
+                        <li>Snowflake</li>
+                        <li>Git / GitHub</li>
+                        <li>Docker</li>
+                        <li>AWS</li>
+                        <li>PyTorch</li>
+                        <li>React / Node.js</li>
+                        <li>PostgreSQL / Supabase</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio" id="portfolio">
+            <div class="portfolio-inner">
+                <div class="section-header reveal">
+                    <span class="section-tag" data-i18n="portfolio.section_tag">03 — Portfolio</span>
+                    <h2 class="section-title" data-i18n="portfolio.section_title">Portfolio</h2>
+                </div>
+                <h3 class="portfolio-subsection-title reveal" data-i18n="portfolio.internships">Internships</h3>
+                <div class="portfolio-grid">
+
+                    <div class="portfolio-item reveal">
+                        <span class="portfolio-tag">Jan 2026 — Present</span>
+                        <h3 data-i18n="portfolio.i1.title">Intern, Quantitative Analyst @ PhillipCapital (IFS Capital)</h3>
+
+                        <p data-i18n="portfolio.i1.p1">
+                            Enhanced current GLM pricing model (Poisson/Gamma) to quantify 
+                            rating factor relativities for private motor portfolios, 
+                            exploring alternative models including Tweedie and GAM, Tweedie 
+                            model achieved a Gini gain of 0.126, outperforming baseline model
+                        </p>
+
+                        <p data-i18n="portfolio.i1.p2">
+                            Designed Monte Carlo simulations to model stochastic claim
+                            outcomes for 9,253 motor insurance policies under a Tweedie GLM
+                            framework, identifying 99th-percentile loss ratio ~4.54% above
+                            expected levels, quantifying portfolio tail risk
+                        </p>
+
+                        <p data-i18n="portfolio.i1.p3">
+                            Developed SQL pipelines in Snowflake to compute borrower-level
+                            credit metrics (utilisation ratios, working-capital exposure,
+                            investment limits) and implemented rule-based classification to
+                            surface eligibility signals via Tableau dashboards for loan
+                            decisioning
+                        </p>
+                        <div class="portfolio-tech">
+                            <span>Python</span>
+                            <span>R</span>
+                            <span>Supervised Machine Learning (GLM/GAM)</span>
+                            <span>SQL</span>
+                            <span>Tableau</span>
+                            <span>Snowflake</span>
+                            <span>Salesforce</span>
+                            <span>Docker</span>
+
+                        </div>
+
+                    </div>
+                    <div class="portfolio-item reveal">
+                        <span class="portfolio-tag">May 2025 — Aug 2025</span>
+                        <h3 data-i18n="portfolio.i2.title">Intern, Strategy & Business Intelligence Analyst @ Adroit Investment Technologies</h3>
+
+                        <p data-i18n="portfolio.i2.p1">
+                            Researched on emerging AI technologies across various sectors and
+                            prepared teasers, industry outlook, statistical reports for
+                            prospective clients, achieving 33% increase in client acquisition
+                            for the Month of May
+                        </p>
+
+                        <p data-i18n="portfolio.i2.p2">
+                            Managed components of financial statements using Power BI
+                            including Capital Accounts, Capital Calls, Capital Distribution
+                        </p>
+
+                        <p data-i18n="portfolio.i2.p3">
+                            Operated across a full stack of a Learning Management System (LMS)
+                            for a children's learning school using Odoo platform, including
+                            UI/UX adjustments, business logic workflows, data model configurations.
+                            Design shortlisted by CEO to be used as pitching material
+                        </p>
+
+                        <p data-i18n="portfolio.i2.p4">
+                            Implemented Excel algorithms to clean and compare 2,000 entries of
+                            investment data, enabling strategic report generation and
+                            stakeholder-ready insights
+                        </p>
+
+                        <p data-i18n="portfolio.i2.p5">
+                            Prepared internal and external investor decks akin to M&A pitchbooks,
+                            integrating macroeconomic trends (e.g. US tariffs, air cargo rates) with
+                            company performance
+                        </p>
+
+                        <div class="portfolio-tech">
+                            <span>Python</span>
+                            <span>Microsoft Office (Excel, PowerPoint, Power BI)</span>
+                            <span>Odoo</span>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item reveal">
+                        <span class="portfolio-tag">Jul 2024</span>
+                        <h3 data-i18n="portfolio.i3.title">Intern, Data Analytics & Management @ SCAL Academy</h3>
+
+                        <p data-i18n="portfolio.i3.p1">
+                            Managed and cleaned entries of 1,900 trainees from the Month of April
+                            to July 2024 using Excel VBA for generation of certificates
+                        </p>
+
+                        <p data-i18n="portfolio.i3.p2">
+                            Developed an automated data entry system optimising mass certificate
+                            generation process, resulting in 75% reduction in manhours
+                        </p>
+
+                        <p data-i18n="portfolio.i3.p3">
+                            Coordinated Ad-hoc tele calling from clients and trainees, ensuring all
+                            disputes and queries were addressed in time and reduced callback rate
+                            by 50%
+                        </p>
+
+                        <div class="portfolio-tech">
+                            <span>Microsoft Office (Excel, VBA)</span>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-item reveal">
+                        <span class="portfolio-tag">May 2024 — Jun 2024</span>
+                        <h3 data-i18n="portfolio.i4.title">Intern, Actuary @ AIA (Grinweiv)</h3>
+
+                        <p data-i18n="portfolio.i4.p1">
+                           Devised key presentations for insurance companies, namely DirectAsia
+                           and Allied World Assurance regarding Customer Acquisition and
+                           Financial Modelling, resulting in a projected 20% increase in client
+                           count in coming 1-3 years, won overall best ideation
+                        </p>
+
+                        <p data-i18n="portfolio.i4.p2">
+                           Analysed option-based policy payoff structures (Call, Put, Straddle,
+                           Butterfly, Condor) to understand hedging mechanics in insurance product
+                           design
+                        </p>
+
+                        <p data-i18n="portfolio.i4.p3">
+                            Appointed to be weekly Team Lead and managed a team of 6 in administrative 
+                            matters, collate and report feedback regarding training and well-being to
+                            supervisor
+                        </p>
+
+                        <div class="portfolio-tech">
+                            <span>Microsoft Office (Excel, PowerPoint)</span>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item reveal">
+                        <span class="portfolio-tag">Dec 2019</span>
+                        <h3 data-i18n="portfolio.i5.title">Intern, Systems Engineer @ Defence Science and Technology Agency</h3>
+
+                        <p data-i18n="portfolio.i5.p1">
+                            Utilised visual tools to construct Command Center Dashboards for a
+                            Just-in-Time Data Switchboard used during threat and crisis management,
+                            Dashboard enhancements approved by Head of Technology for implementation
+                        </p>
+
+                        <p data-i18n="portfolio.i5.p2">
+                            Devised a presentation of a prototype of the dashboard created, dissecting
+                            strengths and weaknesses for improvements in future development
+                        </p>
+
+                        <div class="portfolio-tech">
+                            <span>Python</span>
+                            <span>Javascript</span>
+                            <span>Feathers.js</span>
+                            <span>REST API</span>
+                            <span>AWS</span>
+                            <span>SQL</span>
+                            <span>Tableau</span>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="portfolio-subsection-title reveal" data-i18n="portfolio.featured_projects">Featured Projects</h3>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item portfolio-item--hero reveal">
+                        <div class="portfolio-hero-left">
+                            <span class="portfolio-tag" data-i18n="portfolio.p1.tag">Quantitative Finance</span>
+                            <h3 data-i18n="portfolio.p1.title">CAPM Portfolio Optimiser</h3>
+                        </div>
+                        <div class="portfolio-hero-right">
+                            <p data-i18n="portfolio.p1.p">
+                                Built an end-to-end quantitative portfolio optimisation engine from scratch using live market data
+                                from Yahoo Finance. Estimated per-stock alpha and beta via OLS regression, then applied CAPM-implied
+                                expected returns as inputs to three optimisation strategies: Maximum Sharpe Ratio, Minimum Variance,
+                                and Equal-Weight; all solved via SciPy's SLSQP solver. Constructed the full Markowitz Efficient
+                                Frontier and backtested all three strategies against cumulative $1,000 growth
+                            </p>
+                            <div class="portfolio-tech">
+                                <span>Python</span>
+                                <span>NumPy</span>
+                                <span>Pandas</span>
+                                <span>SciPy</span>
+                                <span>Statsmodels</span>
+                                <span>yfinance</span>
+                                <span>Matplotlib</span>
+                            </div>
+                            <a href="https://github.com/Darkmatter126ms/CAPM-Portfolio-Optimiser" target="_blank" rel="noopener noreferrer" class="portfolio-link" data-i18n="portfolio.view_github">View on GitHub →</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item reveal">
+                        <span class="portfolio-tag" data-i18n="portfolio.p2.tag">Machine Learning</span>
+                        <h3 data-i18n="portfolio.p2.title">Deep Learning for Dense Video Captioning</h3>
+                        <p data-i18n="portfolio.p2.p">
+                            Implemented the Vid2Seq framework, a visual-language model that jointly localises and describes events
+                            in untrimmed video using CLIP-based visual extraction and a T5 sequence-to-sequence backbone. Responsible
+                            for implementing METEOR and CIDEr evaluation metrics from scratch and conducting ablation experiments
+                            across three CLIP encoders and T5 model sizes. Pretraining improved CIDEr from 59.62% to 70.05%, exceeding
+                            author-reported benchmarks
+                        </p>
+                        <div class="portfolio-tech">
+                            <span>Pytorch</span>
+                            <span>CLIP</span>
+                            <span>T5 (Hugging Face)</span>
+                            <span>Vid2Seq</span>
+                            <span>YouCook2</span>
+                        </div>
+                        <a href="https://github.com/Darkmatter126ms/MediaAnalysis-DenseVideoCaptioning" target="_blank" rel="noopener noreferrer" class="portfolio-link" data-i18n="portfolio.view_github">View on GitHub →</a>
+                    </div>
+                    <div class="portfolio-item reveal">
+                        <span class="portfolio-tag" data-i18n="portfolio.p3.tag">FinTech</span>
+                        <h3 data-i18n="portfolio.p3.title">Wealth Wellness Hub</h3>
+                        <p data-i18n="portfolio.p3.p">
+                            Full-stack wealth management platform built in response to a real Schroders problem statement,
+                            unifying traditional and digital assets into a single dashboard. Engineered a financial wellness scoring
+                            engine with LLM-powered insights via Groq's llama3-8b. Shipped scenario simulation, AI coach chat,
+                            Stripe subscription tiers, automated multilingual email reports, and full i18n across 5 languages;
+                            containerised with Docker
+                        </p>
+                        <div class="portfolio-tech">
+                            <span>React</span>
+                            <span>Vite</span>
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>Groq LLM API</span>
+                            <span>I18next</span>
+                            <span>Docker</span>
+                            <span>Nodemailer</span>
+                            <span>Stripe</span>
+                        </div>
+                        <a href="https://github.com/Darkmatter126ms/Wealth-Wellness-Hub" target="_blank" rel="noopener noreferrer" class="portfolio-link" data-i18n="portfolio.view_github">View on GitHub →</a>
+                    </div>
+                    <div class="portfolio-item reveal">
+                        <span class="portfolio-tag" data-i18n="portfolio.p4.tag">Full Stack</span>
+                        <h3 data-i18n="portfolio.p4.title">Project REACH Donation Dashboard</h3>
+                        <p data-i18n="portfolio.p4.p">
+                            Full-stack donor engagement platform built in 4 days for a Hong Kong non-profit serving 230,000
+                            underprivileged children, targeting a ~70% donor dropout rate. Led ideation and owned the AI-generated badge
+                            system and real-time donation leaderboard. Also shipped an automated campaign newsletter system. 
+                            Built on Vue.js, Tailwind CSS, Flask, Supabase, Stripe, and Resend
+                        </p>
+                        <div class="portfolio-tech">
+                            <span>Vue.js</span>
+                            <span>Tailwind CSS</span>
+                            <span>Flask</span>
+                            <span>Supabase</span>
+                            <span>Stripe</span>
+                            <span>SiliconFlow API</span>
+                        </div>
+                        <a href="https://github.com/Darkmatter126ms/CodeToGive" target="_blank" rel="noopener noreferrer" class="portfolio-link" data-i18n="portfolio.view_github">View on GitHub →</a>
+                    </div>
+                    <div class="portfolio-item reveal">
+                        <span class="portfolio-tag" data-i18n="portfolio.p5.tag">Equity Research</span>
+                        <h3 data-i18n="portfolio.p5.title">Independent Equity Research: Trip.com Group (SEHK:9961)</h3>
+                        <p data-i18n="portfolio.p5.p">
+                            Initiated coverage of Trip.com (SEHK: 9961) with a BUY recommendation and CNY 492 price target
+                            (+10.3% upside). Built a full financial model across income statement, balance sheet, cash flow,
+                            and DCF valuation over FY25–29E. Valuation anchored on 11.5x terminal EBITDA and 7.5% WACC;
+                            supported by Porter's Five Forces, peer multiples benchmarking, and sensitivity analysis
+                        </p>
+                        <a href="Report_point72_challenge.pdf" target="_blank" rel="noopener noreferrer" class="portfolio-link" data-i18n="portfolio.view_report">View Report →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Competitions Section -->
+        <section class="competitions" id="competitions">
+            <div class="section-header reveal">
+                <span class="section-tag" data-i18n="competitions.section_tag">04 — Achievements</span>
+                <h2 class="section-title" data-i18n="competitions.section_title">Selected Competitions</h2>
+            </div>
+            <div class="competitions-list">
+                <div class="competition-item reveal">
+                    <span class="competition-year">Mar 2026</span>
+                    <div class="competition-info">
+                        <h3 data-i18n="competitions.c1.title">FinTech Innovators Hackathon 2026 — NTU NFC × Schroders</h3>
+                        <p data-i18n="competitions.c1.p">
+                            One of 2 problem statements selected by Schroders' Digital Assets 
+                            & Operations Innovation teams. Built and pitched a full-stack financial
+                            wellness platform within a 7-day seeding window. Obtained Honourable
+                            Mention (Top 8 out of 90+ Teams) 
+                        </p>
+                    </div>
+                    <span class="competition-result" data-i18n="competitions.c1.result">Honourable Mention (Top 8)</span>
+                </div>
+                <div class="competition-item reveal">
+                    <span class="competition-year">Aug 2025</span>
+                    <div class="competition-info">
+                        <h3 data-i18n="competitions.c2.title">Morgan Stanley CodeToGive Asia Hackathon 2025</h3>
+                        <p data-i18n="competitions.c2.p">
+                            Selectively chosen to represent NTU in a cross-university hackathon
+                            organised by Morgan Stanley, competing against 10–20 teams across Hong Kong
+                            and Singapore. Teams were tasked with building a technology solution for a
+                            real non-profit within 4 days, where our team was assigned Project REACH, an
+                            education equity charity serving underprivileged children in Hong Kong.
+                            Obtained Top 4 out of 20+ Teams 
+                        </p>
+                    </div>
+                    <span class="competition-result" data-i18n="competitions.c2.result">Top 4</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tutoring Section -->
+        <section class="tutoring" id="tutoring">
+            <div class="tutoring-inner">
+                <div class="section-header reveal">
+                    <span class="section-tag" data-i18n="tutoring.section_tag">05 — Tutoring</span>
+                    <h2 class="section-title" data-i18n="tutoring.section_title">The Turing Laboratory</h2>
+                </div>
+                <div class="tutoring-content">
+                    <div class="tutoring-text reveal">
+                        <h3 data-i18n="tutoring.heading">Helping students excel in English, Mathematics &amp; Sciences</h3>
+                        <p data-i18n="tutoring.p1">
+                            Beyond my academic pursuits, I run a private tutoring service providing 
+                            one-to-one home tuition. This venture has sharpened my ability to break 
+                            down complex concepts, adapt to different learning styles, and build 
+                            meaningful mentor-student relationships.
+                        </p>
+                        <p data-i18n="tutoring.p2">
+                            Teaching has taught me that true understanding comes from being able to 
+                            explain something simply; a principle I apply to every technical 
+                            challenge I face.
+                        </p>
+                        <div class="tutoring-highlights">
+                            <div class="highlight-item">
+                                <div class="highlight-icon">📐</div>
+                                <span class="highlight-text" data-i18n="tutoring.hl_math">Mathematics (Primary to JC)</span>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">🔬</div>
+                                <span class="highlight-text" data-i18n="tutoring.hl_science">Science (Primary)</span>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">💬</div>
+                                <span class="highlight-text" data-i18n="tutoring.hl_english">English (Primary to Secondary)</span>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">🔭</div>
+                                <span class="highlight-text" data-i18n="tutoring.hl_physics">Physics (Secondary)</span>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">💻</div>
+                                <span class="highlight-text" data-i18n="tutoring.hl_programming">Programming Basics (Primary to JC; Adults welcome!)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tutoring-stats reveal">
+                        <div class="stat-card">
+                            <div class="stat-value">20+</div>
+                            <div class="stat-label" data-i18n="tutoring.stat1">Students Taught</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">4+</div>
+                            <div class="stat-label" data-i18n="tutoring.stat2">Years Experience</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">91%</div>
+                            <div class="stat-label" data-i18n="tutoring.stat3">2-Grade Improvement in 4 months</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">88%</div>
+                            <div class="stat-label" data-i18n="tutoring.stat4">Distinction Rate at National Exams</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="section-header reveal">
+                <span class="section-tag" data-i18n="contact.section_tag">06 — Contact</span>
+                <h2 class="section-title" data-i18n="contact.section_title">Let us build something together</h2>
+            </div>
+            <p class="contact-description reveal" data-i18n="contact.description">
+                I am actively seeking opportunities in quantitative research, data science and machine learning. 
+                Whether you have a role in mind, want to discuss a project, or just want to connect;
+                my inbox is always open.
+            </p>
+            <div class="reveal">
+                <a href="mailto:alle0002@e.ntu.edu.sg" class="btn btn-primary" data-i18n="contact.cta">
+                    Get In Touch →
+                </a>
+            </div>
+            <div class="contact-links reveal">
+                <a href="https://www.linkedin.com/in/allen-lu-5964481b6/" class="contact-link" target="_blank" data-i18n="contact.link_linkedin">
+                    LinkedIn ↗
+                </a>
+                <a href="https://github.com/Darkmatter126ms" class="contact-link" target="_blank" data-i18n="contact.link_github">
+                    GitHub ↗
+                </a>
+                <a href="Resume.pdf" class="contact-link" target="_blank" data-i18n="contact.link_resume">
+                    Resume ↗
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <span class="footer-text" data-i18n="footer.text">Designed &amp; Built by Allen Lu © 2026</span>
+            <div class="footer-links">
+                <a href="mailto:alle0002@e.ntu.edu.sg" data-i18n="footer.link_email">Email</a>
+                <a href="https://www.linkedin.com/in/allen-lu-5964481b6" target="_blank" data-i18n="footer.link_linkedin">LinkedIn</a>
+                <a href="https://github.com/Darkmatter126ms" target="_blank" data-i18n="footer.link_github">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a link
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Scroll reveal animation
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        const revealOnScroll = () => {
+            revealElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementTop < windowHeight - 100) {
+                    element.classList.add('active');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('load', revealOnScroll);
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+
+    <script src="i18n.js"></script>
+</body>
+</html>

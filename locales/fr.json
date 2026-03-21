@@ -1,0 +1,155 @@
+{
+  "nav": {
+    "about": "À propos",
+    "skills": "Compétences",
+    "portfolio": "Portfolio",
+    "achievements": "Distinctions",
+    "tutoring": "Tutorat",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tag": "Futur Analyste Quantitatif & Data Scientist",
+    "h1": "Construire l'avenir par les <em>Données</em> et les <em>Mathématiques</em>",
+    "description": "Étudiant en avant-dernière année, passionné par la finance quantitative, les données et l'apprentissage automatique: construisant des solutions technologiques évolutives à fort impact.",
+    "cta_primary": "Entrons en contact →",
+    "cta_secondary": "Voir mon travail",
+    "gpa_label": "Moyenne",
+    "projects_label": "Projets",
+    "competitions_label": "Concours"
+  },
+  "about": {
+    "section_tag": "01 — À propos",
+    "section_title": "Un peu sur moi",
+    "heading": "Guidé par la curiosité, propulsé par les données",
+    "p1": "Je m'appelle Allen Lu. Je suis étudiant en avant-dernière année à la Nanyang Technological University, en spécialisation Data Science et Intelligence Artificielle. Mon parcours vers l'analyse quantitative a débuté lors d'une conversation avec un étudiant plus avancé, qui m'a fait réaliser que ma formation mathématique et la finance étaient intimement liées et cette révélation a tout transformé, m'ouvrant les yeux sur l'élégance des modèles mathématiques dans la prédiction des phénomènes du monde réel.",
+    "p2": "Mon ambition est de travailler à l'intersection des données et de la finance, que ce soit en recherchant des algorithmes de trading dans un fonds quantitatif, en développant des systèmes évolutifs dans une entreprise technologique de premier plan, ou en créant des solutions innovantes qui relient ces deux univers.",
+    "p3": "En dehors du code et des chiffres, j'aime lire, jouer au poker, fréquenter la salle de sport et chercher de nouvelles façons de faire fructifier mon capital.",
+    "label_university": "Université",
+    "label_major": "Filière",
+    "label_graduation": "Fin d'études prévue",
+    "label_focus": "Domaines d'expertise",
+    "val_university": "Nanyang Technological University",
+    "val_major": "Data Science et Intelligence Artificielle",
+    "val_graduation": "Déc 2027",
+    "val_focus": "Finance Quantitative, ML/IA, Analyse de Données"
+  },
+  "skills": {
+    "section_tag": "02 — Compétences",
+    "section_title": "Arsenal Technique",
+    "cat_languages": "Langages",
+    "cat_quant": "Quant. & Données",
+    "cat_tools": "Outils & Frameworks",
+    "proficient": "Maîtrisé",
+    "intermediate": "Intermédiaire",
+    "developing": "En cours d'acquisition"
+  },
+  "portfolio": {
+    "section_tag": "03 — Portfolio",
+    "section_title": "Portfolio",
+    "internships": "Stages",
+    "featured_projects": "Projets Phares",
+    "view_github": "Voir sur GitHub →",
+    "view_report": "Voir le rapport →",
+    "i1": {
+      "title": "Stagiaire, Analyste Quantitatif @ PhillipCapital (IFS Capital)",
+      "p1": "Amélioré le modèle de tarification GLM (Poisson/Gamma) pour quantifier les relativités des facteurs de notation dans des portefeuilles automobiles privés, explorant des modèles alternatifs comme Tweedie et GAM. Le modèle Tweedie a atteint un gain de Gini de 0.126, surpassant le modèle de référence.",
+      "p2": "Conçu des simulations de Monte Carlo pour modéliser les résultats stochastiques de sinistres sur 9 253 polices d'assurance automobile dans un cadre GLM Tweedie, identifiant un ratio de sinistralité au 99e centile supérieur d'environ 4,54% au niveau attendu, ce qui quantifie le risque de queue du portefeuille.",
+      "p3": "Développé des pipelines SQL dans Snowflake pour calculer des métriques de crédit au niveau des emprunteurs, et mis en place une classification par règles pour faire remonter des signaux d'éligibilité via des tableaux de bord Tableau pour l'aide à la décision de crédit."
+    },
+    "i2": {
+      "title": "Stagiaire, Analyste Stratégie & Intelligence Économique @ Adroit Investment Technologies",
+      "p1": "Réalisé des études sur les technologies IA émergentes dans divers secteurs et préparé des teasers, des perspectives sectorielles et des rapports statistiques pour des clients potentiels, contribuant à une hausse de 33% de l'acquisition de clients en mai.",
+      "p2": "Géré des composantes d'états financiers sur Power BI, notamment les Comptes en Capital, Appels de Fonds et Distributions en Capital.",
+      "p3": "Intervenu sur l'ensemble du stack d'un Système de Gestion de l'Apprentissage (LMS) pour une école primaire via la plateforme Odoo — ajustements UX/UI, workflows métier et configurations de modèles de données. La conception a été présélectionnée par le PDG comme support de présentation.",
+      "p4": "Mis en place des algorithmes Excel pour nettoyer et rapprocher 2 000 entrées de données d'investissement, permettant la génération de rapports stratégiques et d'analyses prêtes pour les parties prenantes.",
+      "p5": "Élaboré des decks investisseurs internes et externes similaires aux pitchbooks M&A, intégrant les tendances macroéconomiques (tarifs douaniers américains, taux de fret aérien) avec la performance de l'entreprise."
+    },
+    "i3": {
+      "title": "Stagiaire, Analyse de Données & Gestion @ SCAL Academy",
+      "p1": "Géré et nettoyé les données de 1 900 stagiaires d'avril à juillet 2024 via Excel VBA pour la génération de certificats.",
+      "p2": "Développé un système automatisé de saisie de données optimisant la génération de certificats en masse — réduction de 75% des heures de travail.",
+      "p3": "Coordonné les appels téléphoniques avec clients et stagiaires, résolvant les litiges et questions en temps voulu et réduisant le taux de rappel de 50%."
+    },
+    "i4": {
+      "title": "Stagiaire, Actuariat @ AIA (Grinweiv)",
+      "p1": "Élaboré des présentations clés pour les compagnies d'assurance DirectAsia et Allied World Assurance sur l'Acquisition de Clients et la Modélisation Financière, projetant une hausse de 20% du portefeuille client en 1 à 3 ans. Prix du meilleur concept.",
+      "p2": "Analysé des structures de paiement de polices basées sur les options (Call, Put, Straddle, Butterfly, Condor) pour comprendre les mécanismes de couverture dans la conception de produits d'assurance.",
+      "p3": "Nommé Chef d'Équipe hebdomadaire, gérant 6 membres sur les questions administratives et remontant les retours d'expérience au superviseur."
+    },
+    "i5": {
+      "title": "Stagiaire, Ingénieur Systèmes @ Agence de Science et Technologie de la Défense",
+      "p1": "Construit des tableaux de bord du Centre de Commandement pour un commutateur de données Just-in-Time utilisé en gestion des menaces et crises. Les améliorations ont été approuvées par le Responsable Technologie pour déploiement.",
+      "p2": "Réalisé une présentation d'un prototype de tableau de bord, analysant ses points forts et ses faiblesses pour orienter les développements futurs."
+    },
+    "p1": {
+      "tag": "Finance Quantitative",
+      "title": "Optimiseur de Portefeuille CAPM",
+      "p": "Construit de zéro un moteur d'optimisation de portefeuille quantitatif de bout en bout avec des données de marché en temps réel de Yahoo Finance. Estimation de l'alpha et du bêta par action via régression OLS, puis application des rendements espérés CAPM comme entrées à trois stratégies : Maximum Sharpe Ratio, Variance Minimale et Pondération Égale, toutes résolues via le solver SLSQP de SciPy. Construit la Frontière Efficiente de Markowitz complète et backtesté les trois stratégies sur une croissance cumulée de 1 000 $."
+    },
+    "p2": {
+      "tag": "Apprentissage Automatique",
+      "title": "Deep Learning pour le Sous-titrage Vidéo Dense",
+      "p": "Implémenté le framework Vid2Seq, un modèle visio-linguistique qui localise et décrit simultanément des événements dans des vidéos non recadrées, en combinant extraction visuelle CLIP et backbone T5 séquence à séquence. Implémenté les métriques METEOR et CIDEr depuis zéro et mené des expériences d'ablation sur trois encodeurs CLIP et différentes tailles de T5. Le pré-entraînement a amélioré le CIDEr de 59,62% à 70,05%, dépassant les benchmarks de référence publiés."
+    },
+    "p3": {
+      "tag": "FinTech",
+      "title": "Wealth Wellness Hub",
+      "p": "Plateforme de gestion de patrimoine full-stack construite en réponse à un vrai problème soumis par Schroders, unifiant actifs traditionnels et numériques dans un seul tableau de bord. Moteur de scoring de santé financière avec insights LLM via Groq llama3-8b. Comprend simulation de scénarios, coach IA, abonnements Stripe, rapports e-mail multilingues automatisés et i18n en 5 langues, containerisé avec Docker."
+    },
+    "p4": {
+      "tag": "Full Stack",
+      "title": "Tableau de Bord de Dons Project REACH",
+      "p": "Plateforme d'engagement des donateurs full-stack construite en 4 jours pour une ONG de Hong Kong servant 230 000 enfants défavorisés, avec pour objectif de réduire un taux d'abandon de ~70%. Dirigé l'idéation du système de badges IA et du classement des dons en temps réel, et livré un système automatisé de newsletters de campagne."
+    },
+    "p5": {
+      "tag": "Analyse Boursière",
+      "title": "Analyse Boursière Indépendante : Trip.com Group (SEHK:9961)",
+      "p": "Initié la couverture de Trip.com (SEHK : 9961) avec recommandation ACHAT et objectif de cours CNY 492 (+10,3% de potentiel). Construit un modèle financier complet sur compte de résultat, bilan, flux de trésorerie et valorisation DCF pour FY25-29E. Valorisation ancrée sur 11,5x l'EBITDA terminal et 7,5% WACC — étayée par l'analyse des Cinq Forces de Porter, le benchmark de multiples comparables et l'analyse de sensibilité."
+    }
+  },
+  "competitions": {
+    "section_tag": "04 — Distinctions",
+    "section_title": "Concours Sélectionnés",
+    "c1": {
+      "title": "FinTech Innovators Hackathon 2026 — NTU NFC × Schroders",
+      "p": "L'un des 2 énoncés sélectionnés par les équipes Digital Assets et Innovation Opérationnelle de Schroders. Construit et présenté une plateforme de bien-être financier full-stack en 7 jours. Mention Honorable obtenue (Top 8 sur plus de 90 équipes).",
+      "result": "Mention Honorable (Top 8)"
+    },
+    "c2": {
+      "title": "Morgan Stanley CodeToGive Asia Hackathon 2025",
+      "p": "Sélectionné pour représenter NTU dans un hackathon interuniversitaire organisé par Morgan Stanley, en compétition avec 10 à 20 équipes de Hong Kong et Singapour. Les équipes devaient construire une solution technologique pour une vraie ONG en 4 jours. Notre équipe a été affectée à Project REACH — une organisation caritative pour l'équité éducative au service des enfants défavorisés de Hong Kong. Classés dans le Top 4 sur plus de 20 équipes.",
+      "result": "Top 4"
+    }
+  },
+  "tutoring": {
+    "section_tag": "05 — Tutorat",
+    "section_title": "Le Laboratoire Turing",
+    "heading": "Aider les élèves à exceller en anglais, mathématiques et sciences",
+    "p1": "En marge de mes études, je gère un service privé de tutorat individuel à domicile. Cette activité a aiguisé ma capacité à décomposer des concepts complexes, à m'adapter à différents styles d'apprentissage et à nouer des relations enrichissantes entre tuteur et élève.",
+    "p2": "Enseigner m'a appris que la vraie compréhension naît de la capacité à expliquer simplement; un principe que j'applique à chaque défi technique que je rencontre.",
+    "hl_math": "Mathématiques (Primaire à JC)",
+    "hl_science": "Sciences (Primaire)",
+    "hl_english": "Anglais (Primaire au Secondaire)",
+    "hl_physics": "Physique (Secondaire)",
+    "hl_programming": "Bases de la programmation (Primaire à JC ; adultes bienvenus !)",
+    "stat1": "Élèves accompagnés",
+    "stat2": "Années d'expérience",
+    "stat3": "Progression de 2 niveaux en 4 mois",
+    "stat4": "Taux de mention aux examens nationaux"
+  },
+  "contact": {
+    "section_tag": "06 — Contact",
+    "section_title": "Construisons quelque chose ensemble",
+    "description": "Je suis activement à la recherche d'opportunités en recherche quantitative, science des données et apprentissage automatique. Que vous ayez un poste en tête, souhaitiez discuter d'un projet ou simplement entrer en contact; ma boîte mail est toujours ouverte.",
+    "cta": "Me contacter →",
+    "link_linkedin": "LinkedIn ↗",
+    "link_github": "GitHub ↗",
+    "link_resume": "CV ↗"
+  },
+  "footer": {
+    "text": "Conçu et développé par Allen Lu © 2026",
+    "link_email": "E-mail",
+    "link_linkedin": "LinkedIn",
+    "link_github": "GitHub"
+  }
+}
