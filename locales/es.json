@@ -243,7 +243,7 @@
     },
     "facts": {
       "f0": {
-        "text": "Además del blackjack, me gustan los juegos que se sostienen en la probabilidad, los números y el apalancamiento. El Monopoly es uno. El Catán es otro."
+        "text": "Además del blackjack, me gustan los juegos que se sostienen en la probabilidad, los números y el apalancamiento. El Monopoly es un clásico entre mis favoritos; el Catán sería otro."
       },
       "f1": {
         "text": "Spyfall es otro de mis favoritos. También fue uno de mis primeros intentos de publicar un juego dentro de un contenedor Docker.",
@@ -252,14 +252,14 @@
       },
       "f2": {
         "text": "Junto a Spyfall disfruto de The Resistance: Avalon, que rehíce para explorar el uso de Redis como almacén del estado de partida con muchas actualizaciones simultáneas.",
-        "url": "https://github.com/Darkmatter126ms/Spyfall-Simulation",
+        "url": "https://github.com/Darkmatter126ms/Resistance-the-game-Simulation",
         "linkLabel": "Échale un vistazo"
       },
       "f3": {
-        "text": "Fuera de los juegos, la ciencia cognitiva es el campo al que siempre vuelvo."
+        "text": "Fuera de los juegos, la ciencia cognitiva es el campo al que siempre acabo volviendo."
       },
       "f4": {
-        "text": "Siempre quise una prueba cognitiva que midiera todas las facetas de eso que llamamos inteligencia, así que la construí. Encontró público en los círculos de psicología cognitiva, y puede que incluso te la hayas cruzado en algún sitio.",
+        "text": "Siempre me pregunté qué podría medir cada faceta de eso que llamamos «inteligencia», y un día esa idea se convirtió en un proyecto: construí yo mismo una prueba cognitiva. Encontró bastante público en los círculos de psicología cognitiva, y puede que incluso te la hayas cruzado en algún sitio.",
         "url": "https://chccognitivetest.vercel.app/",
         "linkLabel": "Échale un vistazo"
       },
@@ -267,13 +267,13 @@
         "text": "Leo bastante, sobre todo sobre productividad, finanzas y desarrollo personal. Si tengo que recomendar uno, es Thinking in Bets, de Annie Duke."
       },
       "f6": {
-        "text": "Diez victorias seguidas. Enhorabuena."
+        "text": "Diez victorias seguidas. ¡Enhorabuena!"
       },
       "f7": {
-        "text": "Veinte victorias seguidas. Enhorabuena."
+        "text": "Veinte victorias seguidas. ¡Enhorabuena!"
       },
       "f8": {
-        "text": "Doblaste y ganaste. Un doblaje bien elegido rinde en torno a un 66,7% de beneficio esperado sobre la apuesta inicial."
+        "text": "Doblaste y ganaste. ¿Sabías que un doblaje bien elegido rinde en torno a un 66,7% de beneficio esperado sobre la apuesta inicial?"
       }
     }
   },

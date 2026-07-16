@@ -243,7 +243,7 @@
     },
     "facts": {
       "f0": {
-        "text": "Besides blackjack, I like games that run on probability, numbers and leverage. Monopoly is one. Catan is another."
+        "text": "Besides blackjack, I like games that run on probability, numbers and leverage. Monopoly is a classical favourite of mine, another would be Catan."
       },
       "f1": {
         "text": "Spyfall is another favourite. It was also one of my first attempts at shipping a game inside a Docker container.",
@@ -252,14 +252,14 @@
       },
       "f2": {
         "text": "Alongside Spyfall I enjoy The Resistance: Avalon, which I rebuilt to explore using Redis as the store for game state under many concurrent updates.",
-        "url": "https://github.com/Darkmatter126ms/Spyfall-Simulation",
+        "url": "https://github.com/Darkmatter126ms/Resistance-the-game-Simulation",
         "linkLabel": "Take a look"
       },
       "f3": {
-        "text": "Outside games, cognitive science is the field I keep coming back to."
+        "text": "Outside of games, cognitive science is the field I find myself coming back to."
       },
       "f4": {
-        "text": "I always wanted a cognitive assessment that measured every facet of what we call intelligence, so I built one. It found an audience in cognitive psychology circles, and you may even have run into it somewhere.",
+        "text": "I always wondered what measured every facet of what we call \"intelligence\", and one day this thought manifested into a project where I have built a cognitive assessment myself. It found a sizeable audience in cognitive psychology circles, and you may even have run into it somewhere.",
         "url": "https://chccognitivetest.vercel.app/",
         "linkLabel": "Take a look"
       },
@@ -267,13 +267,13 @@
         "text": "I read a lot, mostly on productivity, finance and self-improvement. One I would recommend is Thinking in Bets by Annie Duke."
       },
       "f6": {
-        "text": "Ten wins in a row. Congratulations."
+        "text": "Ten wins in a row. Congratulations!"
       },
       "f7": {
-        "text": "Twenty wins in a row. Congratulations."
+        "text": "Twenty wins in a row. Congratulations!"
       },
       "f8": {
-        "text": "You doubled down and won. A well-timed double down returns roughly 66.7% expected profit relative to the original bet."
+        "text": "You doubled down and won. Did you know that a well-timed double down returns roughly 66.7% expected profit relative to the original bet?"
       }
     }
   },

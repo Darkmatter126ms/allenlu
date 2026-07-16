@@ -243,7 +243,7 @@
     },
     "facts": {
       "f0": {
-        "text": "En dehors du blackjack, j'aime les jeux qui reposent sur les probabilités, les chiffres et l'effet de levier. Le Monopoly en est un. Catane en est un autre."
+        "text": "En dehors du blackjack, j'aime les jeux qui reposent sur les probabilités, les chiffres et l'effet de levier. Le Monopoly est un classique que j'affectionne particulièrement, et Catane en est un autre."
       },
       "f1": {
         "text": "Spyfall est un autre favori. C'était aussi l'une de mes premières tentatives de livrer un jeu dans un conteneur Docker.",
@@ -252,14 +252,14 @@
       },
       "f2": {
         "text": "À côté de Spyfall, j'aime The Resistance: Avalon, que j'ai refait pour explorer Redis comme espace de stockage de l'état de partie sous de nombreuses mises à jour simultanées.",
-        "url": "https://github.com/Darkmatter126ms/Spyfall-Simulation",
+        "url": "https://github.com/Darkmatter126ms/Resistance-the-game-Simulation",
         "linkLabel": "Jetez-y un œil"
       },
       "f3": {
-        "text": "Hors des jeux, les sciences cognitives sont le domaine vers lequel je reviens toujours."
+        "text": "Hors des jeux, les sciences cognitives sont le domaine vers lequel je finis toujours par revenir."
       },
       "f4": {
-        "text": "J'ai longtemps voulu un test cognitif qui mesure toutes les facettes de ce qu'on appelle l'intelligence, alors je l'ai construit. Il a trouvé son public dans les milieux de la psychologie cognitive, et vous l'avez peut-être déjà croisé quelque part.",
+        "text": "Je me suis toujours demandé ce qui pourrait mesurer chaque facette de ce qu'on appelle « l'intelligence », et un jour cette idée s'est transformée en projet : j'ai construit moi-même un test cognitif. Il a trouvé un public assez large dans les cercles de psychologie cognitive, et vous l'avez peut-être même déjà croisé quelque part.",
         "url": "https://chccognitivetest.vercel.app/",
         "linkLabel": "Jetez-y un œil"
       },
@@ -267,13 +267,13 @@
         "text": "Je lis beaucoup, surtout sur la productivité, la finance et le développement personnel. Si je devais en conseiller un : Thinking in Bets, d'Annie Duke."
       },
       "f6": {
-        "text": "Dix victoires d'affilée. Bravo."
+        "text": "Dix victoires d'affilée. Bravo !"
       },
       "f7": {
-        "text": "Vingt victoires d'affilée. Bravo."
+        "text": "Vingt victoires d'affilée. Bravo !"
       },
       "f8": {
-        "text": "Vous avez doublé et gagné. Un doublement bien choisi rapporte environ 66,7% de profit espéré par rapport à la mise initiale."
+        "text": "Vous avez doublé et gagné. Saviez-vous qu'un doublement bien choisi rapporte environ 66,7 % de profit espéré par rapport à la mise initiale ?"
       }
     }
   },
