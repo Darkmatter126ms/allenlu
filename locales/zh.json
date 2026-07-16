@@ -1,0 +1,294 @@
+{
+  "nav": {
+    "about": "关于我",
+    "skills": "技能",
+    "portfolio": "项目集",
+    "achievements": "荣誉",
+    "tutoring": "辅导",
+    "heuristics": "策略实验"
+  },
+  "hero": {
+    "tag": "量化研究与数据科学",
+    "h1": "以<em>数据</em>与<em>数学</em>构建未来",
+    "description": "南洋理工大学在读生，专注量化金融、数据科学与机器学习，致力于打造真正解决问题的可扩展技术方案。",
+    "cta_primary": "与我联系 →",
+    "cta_secondary": "查看作品",
+    "gpa_label": "绩点",
+    "projects_label": "项目",
+    "competitions_label": "竞赛"
+  },
+  "about": {
+    "section_tag": "01 / 关于",
+    "section_title": "关于我",
+    "heading": "由好奇心驱动，以数据为基",
+    "p1": "我叫鲁兆全 (Allen)，就读于南洋理工大学数据科学与人工智能专业，预计 2027 年 12 月毕业。走上量化这条路，源于一次与学长的长谈。他让我意识到，数学功底与金融从来不是两个互不相干的世界。这个念头彻底改变了我的视角，也让我看清数学模型在刻画现实世界时的那份优雅。",
+    "p2": "我希望在数据与金融的交汇处扎根，无论是在量化对冲基金研究交易策略，在一流科技公司搭建可扩展系统，还是打造连接两个领域的解决方案。",
+    "p3": "不写代码、不跑数据的时候，我读书、打德州扑克、健身，也一直在琢磨如何让手上的资本增值。",
+    "label_university": "大学",
+    "label_major": "专业",
+    "label_graduation": "预计毕业",
+    "label_focus": "专注领域",
+    "val_university": "南洋理工大学",
+    "val_major": "数据科学与人工智能",
+    "val_graduation": "2027 年 12 月",
+    "val_focus": "量化金融、机器学习与人工智能、数据分析"
+  },
+  "skills": {
+    "section_tag": "02 / 技能",
+    "section_title": "技术栈",
+    "cat_languages": "编程语言",
+    "cat_quant": "量化与数据",
+    "cat_tools": "工具与框架",
+    "proficient": "熟练",
+    "intermediate": "中等",
+    "developing": "进阶中"
+  },
+  "portfolio": {
+    "section_tag": "03 / 项目集",
+    "section_title": "项目集",
+    "internships": "实习经历",
+    "featured_projects": "精选项目",
+    "view_github": "在 GitHub 查看 →",
+    "view_report": "查看报告 →",
+    "i1": {
+      "title": "量化分析实习生 @ 辉立资本 (IFS 资本)",
+      "p1": "优化既有的 GLM 定价模型 (Poisson/Gamma)，量化私家车保险组合的费率因子相对性，并探索 Tweedie 与 GAM 等替代模型。Tweedie 模型取得 0.126 的基尼增益，优于基准模型。",
+      "p2": "在 Tweedie GLM 框架下设计蒙特卡洛模拟，对 9,253 份车险保单的随机赔付结果建模，测得第 99 百分位赔付率高于预期水平约 4.54%，据此量化组合的尾部风险。",
+      "p3": "在 Snowflake 中开发 SQL 数据管道，计算借款人层面的信贷指标 (额度使用率、营运资金敞口、投资上限)，并以规则分类输出授信资格信号，通过 Tableau 仪表板支持放贷决策。",
+      "p4": "为一套多模态机器学习信用风险框架完成文献综述与实证梳理，涵盖 XGBoost、基于 Transformer 的自然语言处理 (FinBERT、LIWC) 以及音频与人脸生物特征等替代数据，为新加坡与东南亚市场的中小企业贷款违约预测提供选型与特征工程依据。"
+    },
+    "i2": {
+      "title": "策略与商业智能分析实习生 @ Adroit Investment Technologies",
+      "p1": "调研各行业的新兴人工智能技术，为潜在客户撰写项目简介、行业展望与统计分析报告，助力五月客户获取量提升 33%。",
+      "p2": "使用 Power BI 管理财务报表模块，包括资本账户、资本催缴与资本分配。",
+      "p3": "在 Odoo 平台上全栈参与一所儿童教育机构的学习管理系统 (LMS) 建设，负责界面与体验调整、业务逻辑流程及数据模型配置。该设计获首席执行官选为对外路演材料。",
+      "p4": "编写 Excel 算法清洗并交叉核对 2,000 条投资数据，支撑战略报告的产出与可直接交付的洞察。",
+      "p5": "制作对内与对外的投资者材料，形式接近并购路演手册，将宏观趋势 (如美国关税、空运运价) 与公司业绩结合分析。"
+    },
+    "i3": {
+      "title": "数据分析与管理实习生 @ SCAL Academy",
+      "p1": "使用 Excel VBA 管理并清洗 2024 年 4 月至 7 月共 1,900 名学员的记录，用于证书生成。",
+      "p2": "开发自动化数据录入系统，优化证书批量生成流程，人工工时减少 75%。",
+      "p3": "统筹客户与学员的临时来电处理，确保争议与查询及时解决，回拨率下降 50%。"
+    },
+    "i4": {
+      "title": "精算实习生 @ AIA (Grinweiv)",
+      "p1": "为 DirectAsia 与 Allied World Assurance 两家保险公司制作核心提案，涵盖客户获取与财务建模，预计 1 至 3 年内客户数增长 20%，并获评最佳创意。",
+      "p2": "分析基于期权的保单收益结构 (认购、认沽、跨式、蝶式、鹰式)，理解保险产品设计中的对冲机制。",
+      "p3": "获任每周团队负责人，统筹 6 人团队的行政事务，并向主管汇总反馈培训与团队状态。"
+    },
+    "i5": {
+      "title": "系统工程实习生 @ 新加坡国防科技局",
+      "p1": "运用可视化工具，为威胁与危机管理场景中的即时数据交换平台构建指挥中心仪表板。相关优化获技术主管批准并投入实施。",
+      "p2": "就仪表板原型进行演示，剖析其优势与不足，为后续开发周期提供依据。"
+    },
+    "p1": {
+      "tag": "智能体 AI",
+      "title": "多智能体量化金融平台",
+      "p": "在 SEA x OpenAI Codex Hackathon 2026 上，为 Sea Group 旗下 Monee 生态构建语音优先的四智能体金融决策系统。基于 OpenAI Agents SDK 编排顺序式智能体流水线：以 CRRA 效用加权对七个维度的财务健康度评分，依据评分给出基金推荐，并由一套以 BMKG 气象指数数据校准的 Tweedie GLM 为参数化保险定价。"
+    },
+    "p2": {
+      "tag": "量化金融",
+      "title": "CAPM 投资组合优化引擎",
+      "p": "从零构建端到端的量化投资组合优化引擎，接入 Yahoo Finance 实时行情。以 OLS 回归估计个股的 alpha 与 beta，再将 CAPM 隐含预期收益作为输入，求解三种优化策略：最大夏普比率、最小方差与等权重，均通过 SciPy 的 SLSQP 求解器完成。构建完整的 Markowitz 有效前沿，并以 1,000 美元累计增长为基准回测三种策略。"
+    },
+    "p3": {
+      "tag": "金融科技",
+      "title": "Wealth Wellness Hub",
+      "p": "针对施罗德 (Schroders) 提出的真实业务命题构建的全栈财富管理平台，将传统资产与数字资产整合进同一仪表板。搭建财务健康评分引擎，通过 Groq 的 llama3-8b 提供大模型洞察。已上线情景模拟、AI 教练对话、Stripe 订阅分层、自动化多语种邮件报告与覆盖五种语言的国际化支持，并以 Docker 容器化部署。"
+    },
+    "p4": {
+      "tag": "全栈开发",
+      "title": "Project REACH 捐赠仪表板",
+      "p": "在 4 天内为一家服务 23 万名弱势儿童的香港非营利机构构建全栈捐赠者互动平台，直指约 70% 的捐赠者流失率。主导创意构思，独立负责 AI 生成徽章系统与实时捐赠排行榜，并交付自动化活动邮件系统。技术栈包括 Vue.js、Tailwind CSS、Flask、Supabase、Stripe 与 Resend。"
+    },
+    "p5": {
+      "tag": "股票研究",
+      "title": "独立股票研究：携程集团 (港交所 9961)",
+      "p": "首次覆盖携程 (港交所 9961)，给予买入评级，目标价人民币 492 元，对应 10.3% 上行空间。构建覆盖损益表、资产负债表、现金流量表与 DCF 估值的完整财务模型 (FY25 至 FY29E)。估值以 11.5 倍终值 EBITDA 与 7.5% 的加权平均资本成本为锚，并辅以波特五力分析、可比公司倍数与敏感性分析。"
+    },
+    "p6": {
+      "tag": "机器学习",
+      "title": "面向密集视频描述的深度学习",
+      "p": "复现 Vid2Seq 框架，这是一个联合定位并描述未剪辑视频中事件的视觉语言模型，采用 CLIP 提取视觉特征，并以 T5 序列到序列模型为主干。负责从零实现 METEOR 与 CIDEr 评估指标，并在三种 CLIP 编码器与不同规模的 T5 上开展消融实验。预训练将 CIDEr 从 59.62% 提升至 70.05%，超过原作者公布的基准。"
+    }
+  },
+  "competitions": {
+    "section_tag": "04 / 荣誉",
+    "section_title": "竞赛与奖项",
+    "c1": {
+      "title": "Morgan Stanley CodeToGive Asia Hackathon 2025",
+      "p": "获选代表南洋理工大学出战摩根士丹利主办的跨校黑客松，与来自香港与新加坡的 10 至 20 支队伍同场竞技。参赛队伍须在 4 天内为一家真实非营利机构交付技术方案，我方负责的是 Project REACH，一家为香港弱势儿童争取教育公平的慈善机构。最终在 20 余支队伍中位列前四。",
+      "result": "前四名"
+    },
+    "c2": {
+      "title": "FinTech Innovators Hackathon 2026，NTU NFC x Schroders",
+      "p": "由施罗德数字资产与运营创新团队选定的两道命题之一。在 7 天孵化期内构建并路演了一个全栈财务健康平台，于 90 余支队伍中获颁荣誉奖 (前八名)。",
+      "result": "荣誉奖 (前八名)"
+    },
+    "c3": {
+      "title": "SEA x Codex Hackathon 2026",
+      "p": "由 Sea Group 与 OpenAI 联合主办，属东南亚区域 Codex 黑客松系列赛事。凭赛前提案从 1,200 余名报名者中脱颖而出，成为 40 支入围队伍之一，并在比赛当天以 7 小时构建并部署 NAIK：一个面向印尼零工群体、语音优先的四智能体财务健康与参数化微型保险平台，其 Tweedie GLM 定价内核以 BMKG 洪灾风险评分校准，在留出集上取得 0.46 的基尼系数。",
+      "result": "前 10%"
+    }
+  },
+  "tutoring": {
+    "section_tag": "05 / 辅导",
+    "section_title": "图灵学社",
+    "heading": "助力学生在英文、数学与理科上取得佳绩",
+    "p1": "在学业之外，我经营一家私人辅导机构，提供一对一上门补习。这段经历磨炼了我拆解复杂概念的能力，让我学会因材施教，也让我懂得如何与学生建立真正有分量的师生关系。",
+    "p2": "教学让我明白，真正的理解，是能把一件事讲得简单。这条原则同样贯穿我处理每一个技术难题的方式。",
+    "hl_math": "数学 (小学至初级学院)",
+    "hl_science": "科学 (小学)",
+    "hl_english": "英文 (小学至中学)",
+    "hl_physics": "物理 (中学)",
+    "hl_programming": "编程基础 (小学至初级学院，亦欢迎成人学员)",
+    "stat1": "辅导学生人数",
+    "stat2": "教学年资",
+    "stat3": "四个月内提升两个等第",
+    "stat4": "国家考试优异率"
+  },
+  "heuristics": {
+    "section_tag": "06 / 策略实验",
+    "section_title": "Allen's Policy",
+    "intro": "来跟一个会改写自身代码的 AI 打一局真正的二十一点。灵感来自翁家翌的 <a href=\"https://trinkle23897.github.io/learning-beyond-gradients/\" target=\"_blank\" rel=\"noopener noreferrer\">Learning Beyond Gradients</a>。Allen's Policy 是牌桌上的第二位玩家，与你面对同一位标准庄家，同场较量。每一局结束后，语言模型都会读取当前的决策函数并提出修改。每一份修改都在沙箱中运行，用 60 手牌做回归测试，只有通过测试才会真正上线。它起初只会笨拙地「照抄庄家」，随着你不断出牌而逐步进步。在设置中填入一个免费的 Groq 密钥，即可开启实时循环。这是模型生成的代码在你的浏览器里真实运行，不是预先写好的动画。没有密钥时，它会回退到一套已验证的内置进阶策略。",
+    "settings_btn": "智能体设置",
+    "dealer_label": "庄家",
+    "you_label": "你",
+    "btn_deal": "发牌",
+    "btn_hit": "要牌",
+    "btn_stand": "停牌",
+    "btn_double": "加倍",
+    "btn_split": "分牌",
+    "rules_label": "本局生效的规则",
+    "facts_label": "已解锁的知识",
+    "btn_reset": "重置游戏",
+    "code_label": "Allen's Policy 源码",
+    "history_label": "版本历史",
+    "fact_title": "关于 Allen",
+    "fact_dismiss": "继续",
+    "settings_label": "实时智能体",
+    "settings_title": "启用实时智能体",
+    "settings_intro": "实时循环会在每局结束后调用语言模型改写 Allen's Policy，需要你自备密钥。Groq 提供免费额度，为默认选项。密钥仅保存在本浏览器中，且只会发送给你选定的服务商。",
+    "key_groq": "Groq API 密钥 (免费额度，推荐)",
+    "key_openrouter": "OpenRouter API 密钥 (备用，可不填)",
+    "key_openai": "OpenAI API 密钥 (备用，可不填)",
+    "key_notice": "密钥在本地存储中仅做了轻度混淆，以防他人窥屏。这是混淆，不是加密。请勿使用你不愿被旁人动用额度的付费密钥。",
+    "keys_save": "保存并启用",
+    "keys_clear": "清除密钥",
+    "keys_close": "关闭",
+    "game": {
+      "rules_toggle_show": "查看 Allen's Policy 规则",
+      "rules_toggle_hide": "收起 Allen's Policy 规则",
+      "policy_badge": "Allen's Policy：{v}",
+      "code_version": "策略 {v}",
+      "streak_label": "连胜",
+      "wins_label": "胜场",
+      "hist_clear": "清除历史",
+      "fact_modal_label": "解锁一个小知识",
+      "secret_label": "☆ 隐藏成就",
+      "facts_empty": "击败 Allen's Policy，即可开始解锁关于他的小知识。",
+      "all_unlocked_label": "全部故事已解锁",
+      "all_unlocked_text": "这一轮里，关于 Allen 的篇章你都已翻遍。而策略仍在自我改写，继续玩下去，看看这个智能体能走多远。",
+      "end_label": "看似终点，真的是吗",
+      "end_text": "恭喜。在这条路上，关于 Allen 的一切你都已经知道了。真的吗？不妨在设置中启用实时智能体。",
+      "prompt_first": "点击发牌，与 Allen's Policy v0 打响第一局。",
+      "your_turn": "轮到你了。",
+      "ai_playing": "Allen's Policy 正在出牌。",
+      "dealer_turn": "轮到庄家。",
+      "dealer_bj": "庄家拿到黑杰克。",
+      "player_bj": "黑杰克，无需再做任何动作。",
+      "reset_live": "游戏已重置，智能体将从 v0 重新开始。",
+      "reset_static": "游戏已重置，点击发牌从 v0 开始。",
+      "hand_prefix": "第 {n} 手：",
+      "bust_tag": " 爆牌",
+      "log_hit": "你要牌，点数来到 {t}。",
+      "log_hit_bust": "你要牌，点数来到 {t}，爆牌。",
+      "log_stand": "你在 {t} 点停牌。",
+      "log_double": "你选择加倍，点数来到 {t}。",
+      "log_double_bust": "你选择加倍，点数来到 {t}，爆牌。",
+      "log_split": "你把一对 {rank} 分成了两手。",
+      "log_dealer_draw": "庄家补牌，总点数 {t}。",
+      "log_dealer_draw_bust": "庄家补牌，总点数 {t}，爆牌。",
+      "log_dealer_stand": "庄家在 {t} 点停牌。",
+      "result_win": "本局你赢了 Allen's Policy (你 {you}，它 {ai})。",
+      "result_push": "本局打平 (你 {you}，它 {ai})。",
+      "result_lose": "本局 Allen's Policy 更胜一筹 (你 {you}，它 {ai})。",
+      "log_new_round": "新一局开始，庄家明牌 {rank}。",
+      "log_ai_split": "Allen's Policy 选择分牌。",
+      "log_ai_double": "Allen's Policy 加倍下注，点数来到 {t}。",
+      "log_ai_hit": "Allen's Policy 要牌，点数来到 {t}。",
+      "log_ai_hit_bust": "Allen's Policy 要牌，点数来到 {t}，爆牌。",
+      "log_ai_stand": "Allen's Policy 在 {t} 点停牌。",
+      "fact_link_default": "查看",
+      "achievement_unlocked": "☆ 成就解锁",
+      "level_live": "下一局起启用 {v}"
+    },
+    "versions": {
+      "v0": "照抄庄家",
+      "v1": "硬牌基本策略",
+      "v2": "软牌打法",
+      "v3": "加倍下注",
+      "v4": "对子分牌",
+      "v5": "Hi-Lo 算牌与下注梯度"
+    },
+    "agent": {
+      "thinking": "智能体正在思考…",
+      "patch_accepted": "已采纳来自 {provider} 的补丁。",
+      "patch_rejected": "提案未通过：{reason}，沿用原策略。",
+      "builtin_notice": "内置策略，经蒙特卡洛验证。击败 {v} 即可解锁下一个补丁。",
+      "live_notice": "实时智能体已启用，策略会随着你出牌不断改进。",
+      "live_enabled": "实时智能体已启用。接下来 Allen's Policy 会边打边改写自己。",
+      "live_failed": "无法启动实时智能体，改用内置进阶策略。"
+    },
+    "facts": {
+      "f0": {
+        "text": "除了二十一点，我也喜欢那些讲概率、讲数字、讲杠杆的游戏。大富翁算一个，卡坦岛算另一个。"
+      },
+      "f1": {
+        "text": "《抓间谍》(Spyfall) 也是我的心头好。那还是我最早几次尝试用 Docker 容器把一个游戏真正发布出去。",
+        "url": "https://github.com/Darkmatter126ms/Spyfall-Simulation",
+        "linkLabel": "去看看"
+      },
+      "f2": {
+        "text": "除了 Spyfall，我也爱玩《阿瓦隆》(The Resistance: Avalon)。我把它重写了一遍，为的是摸清在大量并发更新下，用 Redis 存放游戏状态是什么感觉。",
+        "url": "https://github.com/Darkmatter126ms/Spyfall-Simulation",
+        "linkLabel": "去看看"
+      },
+      "f3": {
+        "text": "游戏之外，认知科学是我一直绕不开的领域。"
+      },
+      "f4": {
+        "text": "我一直想要一套能真正衡量「智力」各个面向的认知测验，后来干脆自己做了一个。它在认知心理学圈子里小小地火了一阵，说不定你在哪儿已经见过。",
+        "url": "https://chccognitivetest.vercel.app/",
+        "linkLabel": "去看看"
+      },
+      "f5": {
+        "text": "我读得不少，多是效率、金融与自我提升方面的书。要推荐一本的话，是 Annie Duke 的《Thinking in Bets》。"
+      },
+      "f6": {
+        "text": "连赢十局。恭喜。"
+      },
+      "f7": {
+        "text": "连赢二十局。恭喜。"
+      },
+      "f8": {
+        "text": "你加倍下注，而且赢了。知道吗，时机得当的一次加倍，相对原始注码的期望收益约为 66.7%。"
+      }
+    }
+  },
+  "contact": {
+    "section_tag": "联系我",
+    "section_title": "携手共创",
+    "cta": "与我联系 →",
+    "link_linkedin": "领英 ↗",
+    "link_github": "GitHub ↗",
+    "link_resume": "简历 ↗"
+  },
+  "footer": {
+    "text": "由 Allen Lu 设计与开发 © 2026",
+    "link_email": "邮箱",
+    "link_linkedin": "领英",
+    "link_github": "GitHub"
+  }
+}

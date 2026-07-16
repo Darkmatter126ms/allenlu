@@ -1,0 +1,294 @@
+{
+  "nav": {
+    "about": "À propos",
+    "skills": "Compétences",
+    "portfolio": "Portfolio",
+    "achievements": "Distinctions",
+    "tutoring": "Tutorat",
+    "heuristics": "Heuristiques"
+  },
+  "hero": {
+    "tag": "Futur analyste quantitatif et data scientist",
+    "h1": "Construire l'avenir par les <em>Données</em> et les <em>Mathématiques</em>",
+    "description": "Étudiant en avant-dernière année, tourné vers la finance quantitative, la donnée et l'apprentissage automatique, avec une même exigence : bâtir des solutions techniques qui passent à l'échelle et qui servent à quelque chose.",
+    "cta_primary": "Prenons contact →",
+    "cta_secondary": "Voir mon travail",
+    "gpa_label": "Moyenne",
+    "projects_label": "Projets",
+    "competitions_label": "Concours"
+  },
+  "about": {
+    "section_tag": "01 / À propos",
+    "section_title": "Quelques mots sur moi",
+    "heading": "Guidé par la curiosité, nourri par la donnée",
+    "p1": "Je m'appelle Allen Lu Zhao Quan. Je suis en avant-dernière année à la Nanyang Technological University, en Data Science et Intelligence Artificielle. Mon entrée dans l'analyse quantitative remonte à une conversation avec un étudiant plus avancé, qui m'a fait comprendre que ma formation en mathématiques et la finance n'avaient jamais été deux mondes distincts. Cette prise de conscience a tout recadré et m'a ouvert les yeux sur l'élégance des modèles mathématiques face aux phénomènes réels.",
+    "p2": "Mon ambition est de travailler au croisement de la donnée et de la finance, que ce soit en développant des algorithmes de trading dans un fonds quantitatif, en construisant des systèmes qui passent à l'échelle dans une grande entreprise technologique, ou en concevant des solutions qui relient les deux univers.",
+    "p3": "Quand je ne code pas et que je ne suis pas dans les chiffres, je lis, je joue au poker, je vais à la salle et je cherche des moyens de faire fructifier mon capital.",
+    "label_university": "Université",
+    "label_major": "Filière",
+    "label_graduation": "Fin d'études prévue",
+    "label_focus": "Domaines de prédilection",
+    "val_university": "Nanyang Technological University",
+    "val_major": "Data Science et Intelligence Artificielle",
+    "val_graduation": "Déc. 2027",
+    "val_focus": "Finance quantitative, ML et IA, analyse de données"
+  },
+  "skills": {
+    "section_tag": "02 / Compétences",
+    "section_title": "Arsenal technique",
+    "cat_languages": "Langages",
+    "cat_quant": "Quantitatif et données",
+    "cat_tools": "Outils et frameworks",
+    "proficient": "Maîtrisé",
+    "intermediate": "Intermédiaire",
+    "developing": "En cours d'acquisition"
+  },
+  "portfolio": {
+    "section_tag": "03 / Portfolio",
+    "section_title": "Portfolio",
+    "internships": "Stages",
+    "featured_projects": "Projets phares",
+    "view_github": "Voir sur GitHub →",
+    "view_report": "Voir le rapport →",
+    "i1": {
+      "title": "Stagiaire, Analyste Quantitatif @ PhillipCapital (IFS Capital)",
+      "p1": "Amélioration du modèle de tarification GLM existant (Poisson/Gamma) pour quantifier les relativités des facteurs de tarification sur des portefeuilles automobiles de particuliers, avec exploration de modèles alternatifs dont Tweedie et GAM. Le modèle Tweedie a dégagé un gain de Gini de 0,126 et dépassé le modèle de référence.",
+      "p2": "Conception de simulations de Monte-Carlo modélisant les sinistres stochastiques de 9 253 polices d'assurance automobile dans un cadre GLM Tweedie, faisant ressortir un ratio de sinistralité au 99e centile supérieur d'environ 4,54% au niveau attendu, ce qui chiffre le risque extrême du portefeuille.",
+      "p3": "Développement de pipelines SQL sous Snowflake pour calculer les indicateurs de crédit au niveau de l'emprunteur (taux d'utilisation, exposition au besoin en fonds de roulement, limites d'investissement), et mise en place d'une classification par règles remontant des signaux d'éligibilité dans des tableaux de bord Tableau, au service de la décision de crédit.",
+      "p4": "Revue de littérature et analyse des données probantes pour un cadre multimodal de risque de crédit fondé sur l'apprentissage automatique, couvrant XGBoost, le TAL à base de transformers (FinBERT, LIWC) et des données alternatives (audio, biométrie faciale), afin d'orienter le choix des modèles et la stratégie de feature engineering pour la prédiction de défaut sur les prêts aux PME à Singapour et en Asie du Sud-Est."
+    },
+    "i2": {
+      "title": "Stagiaire, Analyste Stratégie et Business Intelligence @ Adroit Investment Technologies",
+      "p1": "Veille sur les technologies d'IA émergentes dans plusieurs secteurs et rédaction de teasers, de notes de perspectives sectorielles et d'analyses statistiques pour des clients potentiels, contribuant à une hausse de 33% des acquisitions clients sur le mois de mai.",
+      "p2": "Gestion de plusieurs postes des états financiers sous Power BI, dont les comptes de capital, les appels de fonds et les distributions.",
+      "p3": "Intervention sur l'ensemble de la pile technique d'un système de gestion de l'apprentissage (LMS) destiné à une école pour enfants, sur la plateforme Odoo : ajustements d'interface et d'expérience, workflows métier, configuration des modèles de données. La maquette a été retenue par le PDG comme support de présentation.",
+      "p4": "Mise au point d'algorithmes Excel pour nettoyer et recouper 2 000 lignes de données d'investissement, permettant la production de rapports stratégiques et d'analyses directement exploitables.",
+      "p5": "Préparation de supports investisseurs internes et externes, proches d'un pitchbook M&A, croisant les tendances macroéconomiques (droits de douane américains, taux de fret aérien) et la performance de l'entreprise."
+    },
+    "i3": {
+      "title": "Stagiaire, Analyse de Données et Gestion @ SCAL Academy",
+      "p1": "Gestion et nettoyage des dossiers de 1 900 stagiaires d'avril à juillet 2024 sous Excel VBA, en vue de la génération des attestations.",
+      "p2": "Développement d'un système de saisie automatisée qui a optimisé la génération en masse des attestations et réduit de 75% le temps de travail.",
+      "p3": "Coordination des appels ponctuels des clients et des stagiaires, avec traitement des litiges et des demandes dans les délais et une baisse de 50% du taux de rappel."
+    },
+    "i4": {
+      "title": "Stagiaire, Actuariat @ AIA (Grinweiv)",
+      "p1": "Conception de présentations clés pour les assureurs DirectAsia et Allied World Assurance, portant sur l'acquisition client et la modélisation financière, avec une projection de croissance de 20% du portefeuille clients sur 1 à 3 ans. Prix de la meilleure idée.",
+      "p2": "Analyse des structures de payoff de polices adossées à des options (call, put, straddle, butterfly, condor) pour comprendre les mécanismes de couverture dans la conception de produits d'assurance.",
+      "p3": "Nommé chef d'équipe hebdomadaire, encadrement de 6 personnes sur les sujets administratifs et remontée au superviseur des retours sur la formation et le climat d'équipe."
+    },
+    "i5": {
+      "title": "Stagiaire, Ingénieur Systèmes @ Defence Science and Technology Agency (DSTA)",
+      "p1": "Construction, à l'aide d'outils visuels, des tableaux de bord du centre de commandement d'un standard de données en temps réel utilisé en gestion des menaces et des crises. Les améliorations ont été validées par le responsable technologie en vue de leur déploiement.",
+      "p2": "Présentation d'un prototype de tableau de bord, avec analyse de ses forces et de ses faiblesses pour orienter les cycles de développement suivants."
+    },
+    "p1": {
+      "tag": "IA agentique",
+      "title": "Plateforme multi-agents de finance quantitative",
+      "p": "Système d'intelligence financière à quatre agents, pensé d'abord pour la voix, construit pour l'écosystème Monee de Sea Group lors du SEA x OpenAI Codex Hackathon 2026. Orchestration d'une chaîne d'agents séquentielle avec le SDK OpenAI Agents : score de santé financière sur sept dimensions avec pondération d'utilité CRRA, recommandations de fonds conditionnées à ce score, et couverture paramétrique tarifée par un GLM Tweedie calibré sur les données de l'indice météorologique de la BMKG."
+    },
+    "p2": {
+      "tag": "Finance quantitative",
+      "title": "Optimiseur de portefeuille CAPM",
+      "p": "Moteur complet d'optimisation quantitative de portefeuille construit de zéro, alimenté par les données de marché en direct de Yahoo Finance. Estimation de l'alpha et du bêta de chaque titre par régression MCO, puis utilisation des rendements attendus implicites du MEDAF comme entrées de trois stratégies d'optimisation : ratio de Sharpe maximal, variance minimale et pondération égale, toutes résolues via le solveur SLSQP de SciPy. Construction de la frontière efficiente de Markowitz complète et backtest des trois stratégies sur une croissance cumulée de 1 000 dollars."
+    },
+    "p3": {
+      "tag": "FinTech",
+      "title": "Wealth Wellness Hub",
+      "p": "Plateforme full stack de gestion de patrimoine née d'un cas réel soumis par Schroders, réunissant actifs traditionnels et actifs numériques dans un tableau de bord unique. Développement d'un moteur de score de santé financière avec analyses générées par LLM via llama3-8b sur Groq. Livré avec simulation de scénarios, coach IA en conversation, abonnements par paliers via Stripe, rapports e-mail multilingues automatisés et internationalisation complète en 5 langues, le tout conteneurisé sous Docker."
+    },
+    "p4": {
+      "tag": "Full stack",
+      "title": "Tableau de bord des dons de Project REACH",
+      "p": "Plateforme full stack d'engagement des donateurs construite en 4 jours pour une association hongkongaise qui accompagne 230 000 enfants défavorisés, face à un taux d'attrition des donateurs proche de 70%. J'ai mené l'idéation et pris en charge le système de badges générés par IA ainsi que le classement des dons en temps réel, en plus d'un système automatisé de newsletters de campagne. Construit avec Vue.js, Tailwind CSS, Flask, Supabase, Stripe et Resend."
+    },
+    "p5": {
+      "tag": "Analyse actions",
+      "title": "Analyse actions indépendante : Trip.com Group (SEHK: 9961)",
+      "p": "Initiation de couverture sur Trip.com (SEHK: 9961) avec une recommandation ACHAT et un objectif de cours de 492 CNY, soit un potentiel de 10,3%. Construction d'un modèle financier complet couvrant compte de résultat, bilan, flux de trésorerie et valorisation DCF sur FY25 à FY29E. La valorisation repose sur un EBITDA terminal de 11,5x et un WACC de 7,5%, étayée par une analyse des cinq forces de Porter, un benchmark de multiples de comparables et une analyse de sensibilité."
+    },
+    "p6": {
+      "tag": "Apprentissage automatique",
+      "title": "Deep learning pour le sous-titrage dense de vidéo",
+      "p": "Implémentation du framework Vid2Seq, un modèle vision-langage qui localise et décrit conjointement les événements dans des vidéos non découpées, à partir d'une extraction visuelle CLIP et d'un backbone T5 séquence à séquence. En charge de l'implémentation des métriques METEOR et CIDEr de zéro, puis des expériences d'ablation sur trois encodeurs CLIP et plusieurs tailles de T5. Le pré-entraînement a fait passer le CIDEr de 59,62% à 70,05%, au-delà des résultats publiés par les auteurs."
+    }
+  },
+  "competitions": {
+    "section_tag": "04 / Distinctions",
+    "section_title": "Concours sélectionnés",
+    "c1": {
+      "title": "Morgan Stanley CodeToGive Asia Hackathon 2025",
+      "p": "Sélectionné pour représenter la NTU lors d'un hackathon interuniversitaire organisé par Morgan Stanley, face à 10 à 20 équipes de Hong Kong et de Singapour. Chaque équipe devait livrer une solution technologique pour une association réelle en 4 jours, et la nôtre a travaillé pour Project REACH, une organisation qui œuvre pour l'équité éducative des enfants défavorisés de Hong Kong. Classés dans le top 4 sur plus de 20 équipes.",
+      "result": "Top 4"
+    },
+    "c2": {
+      "title": "FinTech Innovators Hackathon 2026, NTU NFC x Schroders",
+      "p": "L'un des 2 sujets retenus par les équipes Actifs Numériques et Innovation Opérationnelle de Schroders. Plateforme full stack de santé financière construite et présentée en 7 jours d'incubation. Mention honorable obtenue (top 8 sur plus de 90 équipes).",
+      "result": "Mention honorable (top 8)"
+    },
+    "c3": {
+      "title": "SEA x Codex Hackathon 2026",
+      "p": "Organisé conjointement par Sea Group et OpenAI, dans le cadre d'une série régionale de Codex Hackathons en Asie du Sud-Est. Retenus parmi 40 équipes sur plus de 1 200 candidats individuels, sur la base d'une proposition remise en amont, nous avons construit et déployé NAIK le jour même de la compétition, en 7 heures : une plateforme à quatre agents, pensée d'abord pour la voix, de santé financière et de micro-assurance paramétrique destinée aux travailleurs indépendants indonésiens, avec un noyau de tarification GLM Tweedie calibré sur les indices de risque d'inondation de la BMKG et un Gini de 0,46 sur l'échantillon de validation.",
+      "result": "Top 10%"
+    }
+  },
+  "tutoring": {
+    "section_tag": "05 / Tutorat",
+    "section_title": "Le Laboratoire Turing",
+    "heading": "Aider les élèves à exceller en anglais, en mathématiques et en sciences",
+    "p1": "En marge de mes études, je dirige un service privé de cours particuliers à domicile, en tête-à-tête. Cette activité a affûté ma capacité à décomposer des concepts complexes, à m'adapter à des façons d'apprendre très différentes et à construire une vraie relation entre un élève et son tuteur.",
+    "p2": "Enseigner m'a appris que la vraie compréhension commence quand on sait expliquer simplement, un principe que j'applique à chaque problème technique que je rencontre.",
+    "hl_math": "Mathématiques (du primaire au pré-universitaire)",
+    "hl_science": "Sciences (primaire)",
+    "hl_english": "Anglais (du primaire au secondaire)",
+    "hl_physics": "Physique (secondaire)",
+    "hl_programming": "Bases de la programmation (du primaire au pré-universitaire, adultes bienvenus)",
+    "stat1": "Élèves accompagnés",
+    "stat2": "Années d'expérience",
+    "stat3": "Deux niveaux gagnés en 4 mois",
+    "stat4": "Taux de mention aux examens nationaux"
+  },
+  "heuristics": {
+    "section_tag": "06 / Heuristiques",
+    "section_title": "Allen's Policy",
+    "intro": "Jouez une vraie main de blackjack contre une IA qui réécrit son propre code pour mieux jouer. Inspirée de <a href=\"https://trinkle23897.github.io/learning-beyond-gradients/\" target=\"_blank\" rel=\"noopener noreferrer\">Learning Beyond Gradients</a> de Jiayi Weng, Allen's Policy prend la deuxième place à la table et vous affronte face au même croupier standard. À la fin de chaque manche, un modèle de langage lit la fonction de décision en cours et propose une modification. Chaque proposition tourne en bac à sable, passe des tests de régression sur 60 mains, et n'entre en jeu que si elle les réussit. Elle commence par imiter bêtement le croupier, puis progresse au fil de vos parties. Ajoutez une clé Groq gratuite dans les réglages pour activer la boucle en direct. C'est bien du code produit par le modèle qui s'exécute dans votre navigateur, pas une animation écrite d'avance. Sans clé, elle se rabat sur une progression interne déjà vérifiée.",
+    "settings_btn": "Réglages de l'agent",
+    "dealer_label": "Croupier",
+    "you_label": "Vous",
+    "btn_deal": "Distribuer",
+    "btn_hit": "Tirer",
+    "btn_stand": "Rester",
+    "btn_double": "Doubler",
+    "btn_split": "Séparer",
+    "rules_label": "Règles actives cette manche",
+    "facts_label": "Anecdotes débloquées",
+    "btn_reset": "Réinitialiser la partie",
+    "code_label": "Code source d'Allen's Policy",
+    "history_label": "Historique des versions",
+    "fact_title": "À propos d'Allen",
+    "fact_dismiss": "Continuer",
+    "settings_label": "Agent en direct",
+    "settings_title": "Activer l'agent en direct",
+    "settings_intro": "La boucle en direct appelle un modèle de langage pour réécrire Allen's Policy après chaque manche. Il vous faut votre propre clé. Groq propose une offre gratuite et reste l'option par défaut. Votre clé est conservée uniquement dans ce navigateur et transmise seulement au fournisseur que vous choisissez.",
+    "key_groq": "Clé API Groq (offre gratuite, recommandée)",
+    "key_openrouter": "Clé API OpenRouter (solution de repli, facultative)",
+    "key_openai": "Clé API OpenAI (solution de repli, facultative)",
+    "key_notice": "Les clés sont légèrement obscurcies dans le stockage local pour décourager les regards indiscrets. C'est de l'obscurcissement, pas du chiffrement. N'utilisez pas une clé facturée dont vous ne voudriez pas qu'un inconnu ayant accès à votre machine dépense le crédit.",
+    "keys_save": "Enregistrer et activer",
+    "keys_clear": "Effacer les clés",
+    "keys_close": "Fermer",
+    "game": {
+      "rules_toggle_show": "Afficher les règles d'Allen's Policy",
+      "rules_toggle_hide": "Masquer les règles d'Allen's Policy",
+      "policy_badge": "Allen's Policy : {v}",
+      "code_version": "Politique {v}",
+      "streak_label": "Série",
+      "wins_label": "Victoires",
+      "hist_clear": "Effacer l'historique",
+      "fact_modal_label": "Anecdote débloquée",
+      "secret_label": "☆ SUCCÈS SECRET",
+      "facts_empty": "Battez Allen's Policy pour commencer à débloquer des anecdotes sur lui.",
+      "all_unlocked_label": "Toutes les anecdotes débloquées",
+      "all_unlocked_text": "Vous avez découvert tous les chapitres d'Allen sur cette partie. La politique continue de se réécrire, alors continuez à jouer pour voir jusqu'où l'agent ira.",
+      "end_label": "Fin du parcours, vraiment ?",
+      "end_text": "Bravo. Vous savez désormais tout ce qu'il y a à savoir sur Allen par cette voie. Vraiment ? Activez l'agent en direct dans les réglages.",
+      "prompt_first": "Distribuez pour jouer votre première main contre Allen's Policy v0.",
+      "your_turn": "À vous de jouer.",
+      "ai_playing": "Allen's Policy joue sa main.",
+      "dealer_turn": "Au tour du croupier.",
+      "dealer_bj": "Le croupier a un blackjack.",
+      "player_bj": "Blackjack. Rien de plus à faire.",
+      "reset_live": "Partie réinitialisée. L'agent repart de la v0.",
+      "reset_static": "Partie réinitialisée. Distribuez pour repartir de la v0.",
+      "hand_prefix": "Main {n} : ",
+      "bust_tag": " dépassé",
+      "log_hit": "Vous tirez et montez à {t}.",
+      "log_hit_bust": "Vous tirez, montez à {t} et dépassez 21.",
+      "log_stand": "Vous restez à {t}.",
+      "log_double": "Vous doublez et montez à {t}.",
+      "log_double_bust": "Vous doublez, montez à {t} et dépassez 21.",
+      "log_split": "Vous séparez votre paire de {rank}.",
+      "log_dealer_draw": "Le croupier tire, total {t}.",
+      "log_dealer_draw_bust": "Le croupier tire, total {t}, il dépasse 21.",
+      "log_dealer_stand": "Le croupier reste à {t}.",
+      "result_win": "Vous battez Allen's Policy cette manche (vous {you}, elle {ai}).",
+      "result_push": "Manche à égalité (vous {you}, elle {ai}).",
+      "result_lose": "Allen's Policy prend le dessus cette manche (vous {you}, elle {ai}).",
+      "log_new_round": "Nouvelle manche distribuée. Le croupier montre {rank}.",
+      "log_ai_split": "Allen's Policy sépare sa paire.",
+      "log_ai_double": "Allen's Policy double et monte à {t}.",
+      "log_ai_hit": "Allen's Policy tire et monte à {t}.",
+      "log_ai_hit_bust": "Allen's Policy tire, monte à {t} et dépasse 21.",
+      "log_ai_stand": "Allen's Policy reste à {t}.",
+      "fact_link_default": "Voir",
+      "achievement_unlocked": "☆ Succès débloqué",
+      "level_live": "La {v} entre en jeu à la prochaine manche"
+    },
+    "versions": {
+      "v0": "Imiter le croupier",
+      "v1": "Base sur totaux durs",
+      "v2": "Jeu des mains souples",
+      "v3": "Doubler la mise",
+      "v4": "Séparation des paires",
+      "v5": "Comptage Hi-Lo et variation de mise"
+    },
+    "agent": {
+      "thinking": "L'agent réfléchit…",
+      "patch_accepted": "Correctif accepté depuis {provider}.",
+      "patch_rejected": "Proposition rejetée : {reason} (politique précédente conservée).",
+      "builtin_notice": "Politique interne, vérifiée par Monte-Carlo. Battez {v} pour débloquer le correctif suivant.",
+      "live_notice": "Agent en direct actif. La politique s'améliore au fil de vos parties.",
+      "live_enabled": "Agent en direct activé. Allen's Policy va maintenant se réécrire pendant que vous jouez.",
+      "live_failed": "Impossible de démarrer l'agent en direct. Passage à la progression interne."
+    },
+    "facts": {
+      "f0": {
+        "text": "En dehors du blackjack, j'aime les jeux qui reposent sur les probabilités, les chiffres et l'effet de levier. Le Monopoly en est un. Catane en est un autre."
+      },
+      "f1": {
+        "text": "Spyfall est un autre favori. C'était aussi l'une de mes premières tentatives de livrer un jeu dans un conteneur Docker.",
+        "url": "https://github.com/Darkmatter126ms/Spyfall-Simulation",
+        "linkLabel": "Jetez-y un œil"
+      },
+      "f2": {
+        "text": "À côté de Spyfall, j'aime The Resistance: Avalon, que j'ai refait pour explorer Redis comme espace de stockage de l'état de partie sous de nombreuses mises à jour simultanées.",
+        "url": "https://github.com/Darkmatter126ms/Spyfall-Simulation",
+        "linkLabel": "Jetez-y un œil"
+      },
+      "f3": {
+        "text": "Hors des jeux, les sciences cognitives sont le domaine vers lequel je reviens toujours."
+      },
+      "f4": {
+        "text": "J'ai longtemps voulu un test cognitif qui mesure toutes les facettes de ce qu'on appelle l'intelligence, alors je l'ai construit. Il a trouvé son public dans les milieux de la psychologie cognitive, et vous l'avez peut-être déjà croisé quelque part.",
+        "url": "https://chccognitivetest.vercel.app/",
+        "linkLabel": "Jetez-y un œil"
+      },
+      "f5": {
+        "text": "Je lis beaucoup, surtout sur la productivité, la finance et le développement personnel. Si je devais en conseiller un : Thinking in Bets, d'Annie Duke."
+      },
+      "f6": {
+        "text": "Dix victoires d'affilée. Bravo."
+      },
+      "f7": {
+        "text": "Vingt victoires d'affilée. Bravo."
+      },
+      "f8": {
+        "text": "Vous avez doublé et gagné. Un doublement bien choisi rapporte environ 66,7% de profit espéré par rapport à la mise initiale."
+      }
+    }
+  },
+  "contact": {
+    "section_tag": "Me contacter",
+    "section_title": "Construisons quelque chose ensemble",
+    "cta": "Me contacter →",
+    "link_linkedin": "LinkedIn ↗",
+    "link_github": "GitHub ↗",
+    "link_resume": "CV ↗"
+  },
+  "footer": {
+    "text": "Conçu et développé par Allen Lu © 2026",
+    "link_email": "E-mail",
+    "link_linkedin": "LinkedIn",
+    "link_github": "GitHub"
+  }
+}

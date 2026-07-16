@@ -1,0 +1,294 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "portfolio": "Portfolio",
+    "achievements": "Achievements",
+    "tutoring": "Tutoring",
+    "heuristics": "Heuristics"
+  },
+  "hero": {
+    "tag": "Aspiring Quant & Data Scientist",
+    "h1": "Building the future through <em>Data</em> and <em>Mathematics</em>",
+    "description": "A penultimate-year student passionate about quantitative finance, data, and machine learning through building scalable technology solutions that make a real impact.",
+    "cta_primary": "Let's Connect →",
+    "cta_secondary": "View My Work",
+    "gpa_label": "GPA",
+    "projects_label": "Projects",
+    "competitions_label": "Competitions"
+  },
+  "about": {
+    "section_tag": "01 / About",
+    "section_title": "A bit about myself",
+    "heading": "Driven by curiosity, powered by data",
+    "p1": "I am Allen Lu Zhao Quan, a penultimate-year student at Nanyang Technological University majoring in Data Science and Artificial Intelligence. My route into quantitative analysis began with a conversation with a senior, who helped me see that my mathematical background and finance were never two separate worlds. That insight reframed everything and opened my eyes to the elegance of mathematical models in predicting real-world phenomena.",
+    "p2": "My aspiration is to work at the intersection of data and finance, whether researching trading algorithms at a quantitative hedge fund, building scalable systems at a leading tech company, or creating solutions that bridge both worlds.",
+    "p3": "When I am not coding or crunching numbers, I read, play poker, hit the gym, and look for ways to grow my capital.",
+    "label_university": "University",
+    "label_major": "Major",
+    "label_graduation": "Expected Graduation",
+    "label_focus": "Focus Areas",
+    "val_university": "Nanyang Technological University",
+    "val_major": "Data Science and Artificial Intelligence",
+    "val_graduation": "Dec 2027",
+    "val_focus": "Quantitative Finance, ML/AI, Data Analytics"
+  },
+  "skills": {
+    "section_tag": "02 / Skills",
+    "section_title": "Technical Arsenal",
+    "cat_languages": "Languages",
+    "cat_quant": "Quant & Data",
+    "cat_tools": "Tools & Frameworks",
+    "proficient": "Proficient",
+    "intermediate": "Intermediate",
+    "developing": "Developing"
+  },
+  "portfolio": {
+    "section_tag": "03 / Portfolio",
+    "section_title": "Portfolio",
+    "internships": "Internships",
+    "featured_projects": "Featured Projects",
+    "view_github": "View on GitHub →",
+    "view_report": "View Report →",
+    "i1": {
+      "title": "Intern, Quantitative Analyst @ PhillipCapital (IFS Capital)",
+      "p1": "Enhanced the existing GLM pricing model (Poisson/Gamma) to quantify rating factor relativities for private motor portfolios, exploring alternative models including Tweedie and GAM. The Tweedie model achieved a Gini gain of 0.126, outperforming the baseline model.",
+      "p2": "Designed Monte Carlo simulations to model stochastic claim outcomes for 9,253 motor insurance policies under a Tweedie GLM framework, identifying a 99th-percentile loss ratio ~4.54% above expected levels, quantifying portfolio tail risk.",
+      "p3": "Developed SQL pipelines in Snowflake to compute borrower-level credit metrics (utilisation ratios, working-capital exposure, investment limits) and implemented rule-based classification to surface eligibility signals via Tableau dashboards for loan decisioning.",
+      "p4": "Conducted literature review and evidentiary analysis for a multimodal ML credit risk framework spanning XGBoost, transformer-based NLP (FinBERT, LIWC), and alternative data modalities (audio, facial biometrics), informing model selection and feature engineering strategy for SME loan default prediction in a Singapore and Southeast Asia context."
+    },
+    "i2": {
+      "title": "Intern, Strategy & Business Intelligence Analyst @ Adroit Investment Technologies",
+      "p1": "Researched emerging AI technologies across various sectors and prepared teasers, industry outlook reports, and statistical analyses for prospective clients, contributing to a 33% increase in client acquisition for the month of May.",
+      "p2": "Managed components of financial statements using Power BI, including Capital Accounts, Capital Calls, and Capital Distribution.",
+      "p3": "Operated across the full stack of a Learning Management System (LMS) for a children's learning school on the Odoo platform, handling UI/UX adjustments, business logic workflows, and data model configurations. The design was shortlisted by the CEO as pitching material.",
+      "p4": "Implemented Excel algorithms to clean and cross-reference 2,000 entries of investment data, enabling strategic report generation and stakeholder-ready insights.",
+      "p5": "Prepared internal and external investor decks akin to M&A pitchbooks, integrating macroeconomic trends (e.g. US tariffs, air cargo rates) with company performance."
+    },
+    "i3": {
+      "title": "Intern, Data Analytics & Management @ SCAL Academy",
+      "p1": "Managed and cleaned records for 1,900 trainees from April to July 2024 using Excel VBA for certificate generation.",
+      "p2": "Developed an automated data entry system that optimised the mass certificate generation process, resulting in a 75% reduction in man-hours.",
+      "p3": "Coordinated ad-hoc tele calling from clients and trainees, ensuring all disputes and queries were addressed in time, and reduced the callback rate by 50%."
+    },
+    "i4": {
+      "title": "Intern, Actuary @ AIA (Grinweiv)",
+      "p1": "Devised key presentations for insurance companies, namely DirectAsia and Allied World Assurance, covering Customer Acquisition and Financial Modelling, projecting a 20% increase in client count over 1 to 3 years. Won overall best ideation.",
+      "p2": "Analysed option-based policy payoff structures (Call, Put, Straddle, Butterfly, Condor) to understand hedging mechanics in insurance product design.",
+      "p3": "Appointed weekly Team Lead, managing a team of 6 in administrative matters, collating and reporting feedback on training and well-being to the supervisor."
+    },
+    "i5": {
+      "title": "Intern, Systems Engineer @ Defence Science and Technology Agency",
+      "p1": "Utilised visual tools to construct Command Centre Dashboards for a Just-in-Time Data Switchboard used during threat and crisis management. Dashboard enhancements were approved by the Head of Technology for implementation.",
+      "p2": "Devised a presentation of a prototype dashboard, dissecting its strengths and weaknesses to inform future development cycles."
+    },
+    "p1": {
+      "tag": "Agentic AI",
+      "title": "Multi-Agent Quantitative Finance Platform",
+      "p": "Built a voice-first, four-agent financial intelligence system for Sea Group's Monee ecosystem at the SEA x OpenAI Codex Hackathon 2026. Orchestrated a sequential agent pipeline via the OpenAI Agents SDK, with financial wellness scored across seven dimensions using CRRA utility weighting, fund recommendations conditioned on those scores, and parametric cover priced by a Tweedie GLM calibrated on BMKG weather index data."
+    },
+    "p2": {
+      "tag": "Quantitative Finance",
+      "title": "CAPM Portfolio Optimiser",
+      "p": "Built an end-to-end quantitative portfolio optimisation engine from scratch using live market data from Yahoo Finance. Estimated per-stock alpha and beta via OLS regression, then applied CAPM-implied expected returns as inputs to three optimisation strategies: Maximum Sharpe Ratio, Minimum Variance, and Equal-Weight, all solved via SciPy's SLSQP solver. Constructed the full Markowitz Efficient Frontier and backtested all three strategies against cumulative $1,000 growth."
+    },
+    "p3": {
+      "tag": "FinTech",
+      "title": "Wealth Wellness Hub",
+      "p": "Full-stack wealth management platform built in response to a real Schroders problem statement, unifying traditional and digital assets into a single dashboard. Engineered a financial wellness scoring engine with LLM-powered insights via Groq's llama3-8b. Shipped scenario simulation, AI coach chat, Stripe subscription tiers, automated multilingual email reports, and full i18n across 5 languages, containerised with Docker."
+    },
+    "p4": {
+      "tag": "Full Stack",
+      "title": "Project REACH Donation Dashboard",
+      "p": "Full-stack donor engagement platform built in 4 days for a Hong Kong non-profit serving 230,000 underprivileged children, targeting a ~70% donor dropout rate. Led ideation and owned the AI-generated badge system and real-time donation leaderboard. Also shipped an automated campaign newsletter system. Built on Vue.js, Tailwind CSS, Flask, Supabase, Stripe, and Resend."
+    },
+    "p5": {
+      "tag": "Equity Research",
+      "title": "Independent Equity Research: Trip.com Group (SEHK:9961)",
+      "p": "Initiated coverage of Trip.com (SEHK: 9961) with a BUY recommendation and CNY 492 price target (+10.3% upside). Built a full financial model across income statement, balance sheet, cash flow, and DCF valuation over FY25 to FY29E. Valuation anchored on 11.5x terminal EBITDA and 7.5% WACC, supported by Porter's Five Forces, peer multiples benchmarking, and sensitivity analysis."
+    },
+    "p6": {
+      "tag": "Machine Learning",
+      "title": "Deep Learning for Dense Video Captioning",
+      "p": "Implemented the Vid2Seq framework, a visual-language model that jointly localises and describes events in untrimmed video using CLIP-based visual extraction and a T5 sequence-to-sequence backbone. Responsible for implementing METEOR and CIDEr evaluation metrics from scratch and conducting ablation experiments across three CLIP encoders and T5 model sizes. Pretraining improved CIDEr from 59.62% to 70.05%, exceeding author-reported benchmarks."
+    }
+  },
+  "competitions": {
+    "section_tag": "04 / Achievements",
+    "section_title": "Selected Competitions",
+    "c1": {
+      "title": "Morgan Stanley CodeToGive Asia Hackathon 2025",
+      "p": "Selected to represent NTU in a cross-university hackathon organised by Morgan Stanley, competing against 10 to 20 teams across Hong Kong and Singapore. Teams were tasked with building a technology solution for a real non-profit within 4 days, and our team was assigned Project REACH, an education equity charity serving underprivileged children in Hong Kong. Obtained Top 4 out of 20+ teams.",
+      "result": "Top 4"
+    },
+    "c2": {
+      "title": "FinTech Innovators Hackathon 2026, NTU NFC x Schroders",
+      "p": "One of 2 problem statements selected by Schroders' Digital Assets and Operations Innovation teams. Built and pitched a full-stack financial wellness platform within a 7-day seeding window. Obtained Honourable Mention (Top 8 out of 90+ teams).",
+      "result": "Honourable Mention (Top 8)"
+    },
+    "c3": {
+      "title": "SEA x Codex Hackathon 2026",
+      "p": "Jointly organised by Sea Group and OpenAI as part of a regional Codex Hackathon series across Southeast Asia. Selected as one of 40 teams from 1,200+ individual applicants on a pre-build proposal, then built and deployed NAIK on the competition day across 7 hours: a voice-first, four-agent financial wellness and parametric micro-insurance platform for Indonesian gig workers, with a Tweedie GLM pricing kernel calibrated on BMKG flood risk scores achieving a Gini of 0.46 on holdout.",
+      "result": "Top 10%"
+    }
+  },
+  "tutoring": {
+    "section_tag": "05 / Tutoring",
+    "section_title": "The Turing Laboratory",
+    "heading": "Helping students excel in English, Mathematics & Sciences",
+    "p1": "Beyond my academic pursuits, I run a private tutoring service providing one-to-one home tuition. This venture has sharpened my ability to break down complex concepts, adapt to different learning styles, and build meaningful mentor and student relationships.",
+    "p2": "Teaching has taught me that true understanding comes from being able to explain something simply, a principle I apply to every technical challenge I face.",
+    "hl_math": "Mathematics (Primary to JC)",
+    "hl_science": "Science (Primary)",
+    "hl_english": "English (Primary to Secondary)",
+    "hl_physics": "Physics (Secondary)",
+    "hl_programming": "Programming Basics (Primary to JC; Adults welcome!)",
+    "stat1": "Students Taught",
+    "stat2": "Years Experience",
+    "stat3": "2-Grade Improvement in 4 months",
+    "stat4": "Distinction Rate at National Exams"
+  },
+  "heuristics": {
+    "section_tag": "06 / Heuristics",
+    "section_title": "Allen's Policy",
+    "intro": "Play a real hand of blackjack against an AI that rewrites its own code to get better. Inspired by Jiayi Weng's <a href=\"https://trinkle23897.github.io/learning-beyond-gradients/\" target=\"_blank\" rel=\"noopener noreferrer\">Learning Beyond Gradients</a>, Allen's Policy is a second seat at the table racing you against a shared, standard dealer. After each round a language model reads the current decision function and proposes an edit. Every proposal is sandboxed, regression-tested against 60 hands, and only swapped in live if it passes. It starts as a naive \"mimic the dealer\" and improves as you play. Add a free Groq key in settings to run the live loop. This is real model-generated code executing in your browser, not a pre-scripted animation. Without a key it falls back to a verified built-in progression.",
+    "settings_btn": "Agent settings",
+    "dealer_label": "Dealer",
+    "you_label": "You",
+    "btn_deal": "Deal",
+    "btn_hit": "Hit",
+    "btn_stand": "Stand",
+    "btn_double": "Double Down",
+    "btn_split": "Split",
+    "rules_label": "Active rules this round",
+    "facts_label": "Unlocked facts",
+    "btn_reset": "Reset Game",
+    "code_label": "Allen's Policy source",
+    "history_label": "Version history",
+    "fact_title": "About Allen",
+    "fact_dismiss": "Continue",
+    "settings_label": "Live agent",
+    "settings_title": "Enable the live agent",
+    "settings_intro": "The live loop calls a language model to rewrite Allen's Policy after each round. Bring your own key. Groq has a free tier and is the default. Your key is stored only in this browser and sent only to the provider you choose.",
+    "key_groq": "Groq API key (free tier, recommended)",
+    "key_openrouter": "OpenRouter API key (optional fallback)",
+    "key_openai": "OpenAI API key (optional fallback)",
+    "key_notice": "Keys are lightly obfuscated in local storage to deter shoulder-surfing. That is obfuscation, not encryption. Do not use a key with billing you would not want a stranger at your machine to spend.",
+    "keys_save": "Save and enable",
+    "keys_clear": "Clear keys",
+    "keys_close": "Close",
+    "game": {
+      "rules_toggle_show": "Show Allen's Policy rules",
+      "rules_toggle_hide": "Hide Allen's Policy rules",
+      "policy_badge": "Allen's Policy: {v}",
+      "code_version": "Policy {v}",
+      "streak_label": "Streak",
+      "wins_label": "Wins",
+      "hist_clear": "Clear history",
+      "fact_modal_label": "Fact unlocked",
+      "secret_label": "☆ SECRET ACHIEVEMENT",
+      "facts_empty": "Beat Allen's Policy to start unlocking facts about him.",
+      "all_unlocked_label": "All facts unlocked",
+      "all_unlocked_text": "You have uncovered all of Allen's chapters on this run. The policy keeps writing itself, so keep playing to see how far the agent takes it.",
+      "end_label": "End of path, or is it?",
+      "end_text": "Congratulations. You have learned everything there is to know about Allen on this path. Or have you? Enable the live agent in settings.",
+      "prompt_first": "Deal to play your first hand against Allen's Policy v0.",
+      "your_turn": "Your turn.",
+      "ai_playing": "Allen's Policy is playing.",
+      "dealer_turn": "Dealer's turn.",
+      "dealer_bj": "Dealer has blackjack.",
+      "player_bj": "Blackjack. No further action needed.",
+      "reset_live": "Game reset. The agent starts again from v0.",
+      "reset_static": "Game reset. Deal to start at v0.",
+      "hand_prefix": "Hand {n}: ",
+      "bust_tag": " bust",
+      "log_hit": "You hit, drawing to {t}.",
+      "log_hit_bust": "You hit, drawing to {t} and bust.",
+      "log_stand": "You stand on {t}.",
+      "log_double": "You double down, drawing to {t}.",
+      "log_double_bust": "You double down, drawing to {t} and bust.",
+      "log_split": "You split your {rank}s.",
+      "log_dealer_draw": "Dealer draws, total {t}.",
+      "log_dealer_draw_bust": "Dealer draws, total {t} (bust).",
+      "log_dealer_stand": "Dealer stands on {t}.",
+      "result_win": "You beat Allen's Policy this round (you {you}, it {ai}).",
+      "result_push": "Even result this round (you {you}, it {ai}).",
+      "result_lose": "Allen's Policy got the better of you this round (you {you}, it {ai}).",
+      "log_new_round": "New round dealt. Dealer shows {rank}.",
+      "log_ai_split": "Allen's Policy splits.",
+      "log_ai_double": "Allen's Policy doubles down, drawing to {t}.",
+      "log_ai_hit": "Allen's Policy hits, drawing to {t}.",
+      "log_ai_hit_bust": "Allen's Policy hits, drawing to {t} and busts.",
+      "log_ai_stand": "Allen's Policy stands on {t}.",
+      "fact_link_default": "View",
+      "achievement_unlocked": "☆ Achievement unlocked",
+      "level_live": "{v} is live next round"
+    },
+    "versions": {
+      "v0": "Mimic the dealer",
+      "v1": "Hard-total basic",
+      "v2": "Soft-hand play",
+      "v3": "Doubling down",
+      "v4": "Pair splitting",
+      "v5": "Hi-Lo counting and bet spread"
+    },
+    "agent": {
+      "thinking": "Agent is thinking…",
+      "patch_accepted": "Patch accepted from {provider}.",
+      "patch_rejected": "Proposal rejected: {reason} (previous policy kept).",
+      "builtin_notice": "Built-in, Monte Carlo verified policy. Beat {v} to unlock the next patch.",
+      "live_notice": "Live agent active. The policy improves as you play.",
+      "live_enabled": "Live agent enabled. Allen's Policy will now rewrite itself as you play.",
+      "live_failed": "Could not start the live agent. Playing the built-in progression instead."
+    },
+    "facts": {
+      "f0": {
+        "text": "Besides blackjack, I like games that run on probability, numbers and leverage. Monopoly is one. Catan is another."
+      },
+      "f1": {
+        "text": "Spyfall is another favourite. It was also one of my first attempts at shipping a game inside a Docker container.",
+        "url": "https://github.com/Darkmatter126ms/Spyfall-Simulation",
+        "linkLabel": "Take a look"
+      },
+      "f2": {
+        "text": "Alongside Spyfall I enjoy The Resistance: Avalon, which I rebuilt to explore using Redis as the store for game state under many concurrent updates.",
+        "url": "https://github.com/Darkmatter126ms/Spyfall-Simulation",
+        "linkLabel": "Take a look"
+      },
+      "f3": {
+        "text": "Outside games, cognitive science is the field I keep coming back to."
+      },
+      "f4": {
+        "text": "I always wanted a cognitive assessment that measured every facet of what we call intelligence, so I built one. It found an audience in cognitive psychology circles, and you may even have run into it somewhere.",
+        "url": "https://chccognitivetest.vercel.app/",
+        "linkLabel": "Take a look"
+      },
+      "f5": {
+        "text": "I read a lot, mostly on productivity, finance and self-improvement. One I would recommend is Thinking in Bets by Annie Duke."
+      },
+      "f6": {
+        "text": "Ten wins in a row. Congratulations."
+      },
+      "f7": {
+        "text": "Twenty wins in a row. Congratulations."
+      },
+      "f8": {
+        "text": "You doubled down and won. A well-timed double down returns roughly 66.7% expected profit relative to the original bet."
+      }
+    }
+  },
+  "contact": {
+    "section_tag": "Get In Touch",
+    "section_title": "Let us build something together",
+    "cta": "Get In Touch →",
+    "link_linkedin": "LinkedIn ↗",
+    "link_github": "GitHub ↗",
+    "link_resume": "Resume ↗"
+  },
+  "footer": {
+    "text": "Designed & Built by Allen Lu © 2026",
+    "link_email": "Email",
+    "link_linkedin": "LinkedIn",
+    "link_github": "GitHub"
+  }
+}
