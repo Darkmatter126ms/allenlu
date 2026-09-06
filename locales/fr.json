@@ -82,6 +82,10 @@
       "p1": "Construction, à l'aide d'outils visuels, des tableaux de bord du centre de commandement d'un standard de données en temps réel utilisé en gestion des menaces et des crises. Les améliorations ont été validées par le responsable technologie en vue de leur déploiement.",
       "p2": "Présentation d'un prototype de tableau de bord, avec analyse de ses forces et de ses faiblesses pour orienter les cycles de développement suivants."
     },
+    "i6": {
+      "title": "Stagiaire, Analyste de Données Bancaires @ ING",
+      "p1": "Conception de flux automatisés d'intégration de données avec SharePoint, Power Apps et Power Automate, transformant les dossiers opérationnels de Financial Crime en jeux de données structurés pour l'analyse de performance et les rapports Power BI, ce qui a réduit de 80% les problèmes mensuels de qualité des données."
+    },
     "p1": {
       "tag": "IA agentique",
       "title": "Plateforme multi-agents de finance quantitative",
@@ -130,6 +134,11 @@
       "title": "SEA x Codex Hackathon 2026",
       "p": "Organisé conjointement par Sea Group et OpenAI, dans le cadre d'une série régionale de Codex Hackathons en Asie du Sud-Est. Retenus parmi 40 équipes sur plus de 1 200 candidats individuels, sur la base d'une proposition remise en amont, nous avons construit et déployé NAIK le jour même de la compétition, en 7 heures : une plateforme à quatre agents, pensée d'abord pour la voix, de santé financière et de micro-assurance paramétrique destinée aux travailleurs indépendants indonésiens, avec un noyau de tarification GLM Tweedie calibré sur les indices de risque d'inondation de la BMKG et un Gini de 0,46 sur l'échantillon de validation.",
       "result": "Top 10%"
+    },
+    "c4": {
+      "title": "Gunvor Quantitative Trading Challenge 2026",
+      "p": "Sélectionné par Gunvor comme l'un des finalistes du concours de trading en direct de la Quantitative Energy Desk. Codage d'une stratégie de retour à la moyenne tenant compte du régime de marché pour la marge de raffinage, avec des entrées fondées sur le z-score et un stop dynamique basé sur l'écart-type, testée sur un marché en direct pendant 60 minutes, générant un P&L de 347 898,72 dollars pour une exposition brute de 1,04 million de dollars, tout en maintenant l'exposition nette à 2 546 dollars. Classé 2e sur 7 équipes finalistes.",
+      "result": "Vice-champion"
     }
   },
   "tutoring": {
