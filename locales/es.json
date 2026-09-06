@@ -82,6 +82,10 @@
       "p1": "Construí, con herramientas visuales, los dashboards del Centro de Mando de un conmutador de datos en tiempo real utilizado en la gestión de amenazas y crisis. El responsable de Tecnología aprobó las mejoras para su implantación.",
       "p2": "Preparé una presentación del prototipo del dashboard, analizando sus fortalezas y debilidades para orientar los siguientes ciclos de desarrollo."
     },
+    "i6": {
+      "title": "Analista de Datos Bancarios en prácticas @ ING",
+      "p1": "Diseñé flujos automatizados de integración de datos con SharePoint, Power Apps y Power Automate, transformando los registros operativos de Financial Crime en conjuntos de datos estructurados para el análisis de rendimiento y los informes de Power BI, lo que redujo los problemas mensuales de calidad de datos en un 80%."
+    },
     "p1": {
       "tag": "IA agéntica",
       "title": "Plataforma multiagente de finanzas cuantitativas",
@@ -130,6 +134,11 @@
       "title": "SEA x Codex Hackathon 2026",
       "p": "Organizado conjuntamente por Sea Group y OpenAI dentro de una serie regional de Codex Hackathons por el Sudeste Asiático. Seleccionados como uno de los 40 equipos entre más de 1.200 candidatos individuales gracias a una propuesta previa, construimos y desplegamos NAIK el mismo día de la competición, en 7 horas: una plataforma con prioridad a la voz y cuatro agentes, de salud financiera y microseguro paramétrico, dirigida a los trabajadores de la economía informal de Indonesia, con un núcleo de tarificación GLM Tweedie calibrado sobre los índices de riesgo de inundación de la BMKG y un Gini de 0,46 en la muestra de validación.",
       "result": "Top 10%"
+    },
+    "c4": {
+      "title": "Gunvor Quantitative Trading Challenge 2026",
+      "p": "Seleccionado por Gunvor como uno de los finalistas del desafío de trading en vivo de la mesa de energía cuantitativa. Programé una estrategia de reversión a la media sensible al régimen de mercado para el margen de refino, con entradas basadas en z-score y un stop dinámico de desviación estándar, probada en un mercado en vivo durante 60 minutos, generando un P&L de 347.898,72 dólares sobre una exposición bruta de 1,04 millones de dólares, mientras mantenía la exposición neta en 2.546 dólares. Obtuve el 2.º puesto entre 7 equipos finalistas.",
+      "result": "Subcampeón"
     }
   },
   "tutoring": {
